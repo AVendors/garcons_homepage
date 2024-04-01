@@ -1,0 +1,11 @@
+.about-us{
+    line-height: 38px;
+}
+.do-it-right{
+    display: inline-block;
+}
+.step-1 img{
+    width: 100%;
+    box-shadow: 1px 1px 8px #7b7878c9;
+    border-radius: 10px;
+}
