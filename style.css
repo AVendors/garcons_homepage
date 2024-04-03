@@ -1,11 +1,75 @@
-.about-us{
+.about-us {
     line-height: 38px;
 }
-.do-it-right{
+
+.do-it-right {
     display: inline-block;
 }
-.step-1 img{
+
+.step-1 img {
     width: 100%;
     box-shadow: 1px 1px 8px #7b7878c9;
     border-radius: 10px;
+}
+
+.trusted-teams img {
+    width: 100%;
+}
+
+#step-2 {
+    background: #FBFD5D;
+}
+
+.steps-container {
+    padding: 50px 0 0 40px;
+    min-height: 200px;
+    display: inline-block;
+}
+
+.steps-flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.steps-flex img {
+    width: 60%;
+}
+
+.steps-border-bottom {
+    border-top: 1px solid #B2B2B2;
+    padding-bottom: 50px;
+}
+
+.steps-flex p {
+    max-width: 275px;
+    text-align: justify;
+}
+
+.steps-flex button {
+    background: black;
+    color: #fff;
+    border: none;
+    padding: 10px 50px;
+    border-radius: 7px;
+    /* margin: auto; */
+    display: flex;
+}
+
+#step-3 {
+    background: #C8B8FF;
+}
+
+.sc-left .steps-flex p {
+    max-width: 275px;
+    margin-right: 80px;
+}
+.sc-left .steps-flex img{
+    margin-left: -50px;
+}
+
+.sc-left.steps-container {
+    padding: 50px 40px 0;
+}
+#step-4{
+    background: #15A958;
 }
