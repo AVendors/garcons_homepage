@@ -73,3 +73,47 @@
 #step-4{
     background: #15A958;
 }
+#work-examples button,
+#why-garcons button,
+#create-web-designs button{
+    background: black;
+    color: #fff;
+    border: none;
+    padding: 10px 50px;
+    border-radius: 7px;
+}
+#why-garcons{
+    background: #FFC470;
+}
+#why-garcons .flex-items{
+    display: flex;
+    justify-content: space-between;
+}
+#why-garcons .flex-items div{
+    width: 30%;
+}
+#why-garcons .flex-items img{
+    width: 100%;
+}
+#why-garcons .flex-items p{
+    max-width: 85%;
+    min-width: 250px;
+}
+#create-web-designs{
+    background: #80CAFF;
+    display: flex;
+    justify-content: space-between;
+}
+#create-web-designs div{
+    width: 35%;
+}
+#create-web-designs img{
+    width: 50%;
+}
+#create-web-designs p{
+    text-align: justify;
+}
+#create-web-designs.padding-body{
+    padding: 10px 0 10px 30px;
+    
+}
