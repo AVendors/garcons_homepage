@@ -1,6 +1,17 @@
 /* // <uniquifier>: Use a unique and descriptive class name
 // <weight>: Use a value from 100 to 900 */
 
+* {
+    box-sizing: border-box;
+}
+.archivo-important {
+    font-family: "Archivo", sans-serif !important;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100;
+}
 .archivo-300 {
     font-family: "Archivo", sans-serif;
     font-optical-sizing: auto;
@@ -37,8 +48,9 @@
         "wdth" 100;
 }
 
+.btn-link.archivo-700,
 .archivo-700 {
-    font-family: "Archivo", sans-serif;
+    font-family: "Archivo", sans-serif !important;
     font-optical-sizing: auto;
     font-weight: 700;
     font-style: normal;
@@ -89,23 +101,131 @@ header button {
 }
 
 
-body {
-    
-}
-.padding-body{
+body {}
+
+.padding-body {
     padding: 10px 30px;
     display: block;
 }
 
-.f-18{
+.f-18 {
     font-size: 18px;
 }
-.f-33{
+.f-26 {
+    font-size: 26px !important;
+}
+.f-33 {
     font-size: 33px;
 }
-.f-36{
+
+.f-36 {
     font-size: 36px;
 }
-.justify-content{
+
+.justify-content {
     text-align: justify;
+}
+
+.hide-desktop {
+    display: none;
+}
+
+.pos-rel {
+    position: relative;
+}
+
+#menu {
+    position: fixed;
+    top: 0;
+    background: #fff;
+    height: 100%;
+    width: 60%;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 40%;
+    display: none;
+}
+
+#menu span {
+    margin-top: 20px;
+}
+
+#menu button {
+    background: black;
+    color: #fff;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 7px;
+    margin-top: 20px;
+}
+
+.backdrop {
+    position: fixed;
+    display: none;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+#menu.open {
+    display: flex;
+}
+
+.backdrop.open {
+    display: block;
+}
+
+header a,
+#menu a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.text-center{
+    text-align: center;
+}
+.text-left{
+    text-align: left !important;
+}
+.text-justify{
+    text-align: justify;
+}
+
+@media (min-width:1375px) {
+    #pricing-boxes{
+        height: 800px;
+    }
+}
+
+@media (max-width:786px) {
+    .hide-desktop {
+        display: block !important;
+    }
+
+    .hide-mobile {
+        display: none !important;
+    }
+
+    header img {
+        width: 50%;
+    }
+
+    header {
+        margin-top: 20px;
+        padding: 10px 15px;
+    }
+
+    #toggle-mobile-nav2 {
+        width: 20px;
+        margin-top: -25px;
+    }
+
+    .f-16-m {
+        font-size: 16px;
+    }
 }

@@ -55,6 +55,7 @@
     display: flex;
 }
 
+
 #step-3 {
     background: #C8B8FF;
 }
@@ -63,57 +64,318 @@
     max-width: 275px;
     margin-right: 80px;
 }
-.sc-left .steps-flex img{
+
+.sc-left .steps-flex img {
     margin-left: -50px;
 }
 
 .sc-left.steps-container {
     padding: 50px 40px 0;
 }
-#step-4{
+
+#step-4 {
     background: #15A958;
 }
+
 #work-examples button,
 #why-garcons button,
-#create-web-designs button{
+#create-web-designs button {
     background: black;
     color: #fff;
     border: none;
     padding: 10px 50px;
     border-radius: 7px;
 }
-#why-garcons{
+
+#why-garcons {
     background: #FFC470;
 }
-#why-garcons .flex-items{
+
+#why-garcons .flex-items {
     display: flex;
     justify-content: space-between;
 }
-#why-garcons .flex-items div{
+
+#why-garcons .flex-items div {
     width: 30%;
 }
-#why-garcons .flex-items img{
+
+#why-garcons .flex-items img {
     width: 100%;
 }
-#why-garcons .flex-items p{
+
+#why-garcons .flex-items p {
     max-width: 85%;
     min-width: 250px;
 }
-#create-web-designs{
+
+#create-web-designs {
     background: #80CAFF;
     display: flex;
     justify-content: space-between;
 }
-#create-web-designs div{
+
+#create-web-designs div {
     width: 35%;
 }
-#create-web-designs img{
+
+#create-web-designs img {
     width: 50%;
 }
-#create-web-designs p{
+
+#create-web-designs p {
     text-align: justify;
 }
-#create-web-designs.padding-body{
+
+#create-web-designs.padding-body {
     padding: 10px 0 10px 30px;
-    
+
+}
+
+#pricing-boxes {
+    background: url(./assets/images/pricing-bg.png);
+    width: 100%;
+    height: 600px;
+    background-size: cover;
+    display: flex;
+    justify-content: space-between;
+}
+
+#pricing-boxes .main-box {
+    width: 49%;
+    box-shadow: 4px 2px 4px 0px #A1A0A040;
+    height: 50%;
+    min-height: 400px;
+    max-height: 600px;
+    border-radius: 10px;
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#pricing-boxes .white-box {
+    background: #fff;
+}
+
+#pricing-boxes .box2 {
+    width: 48%;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 12%;
+}
+
+#pricing-boxes .blue-box .box2 {
+    padding-top: 18%;
+}
+
+#pricing-boxes .box2 p {
+    text-align: center;
+    color: #5D6E81;
+}
+
+#pricing-boxes .blue-box .box2 p {
+    color: #B5C8DE;
+}
+
+#pricing-boxes .white-box .grey-box {
+    background: #F7F9FC;
+}
+
+#pricing-boxes .blue-box .light-blue-box {
+    background: #1F4468;
+}
+
+#pricing-boxes .empty-box {
+    width: 51%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 30px 20px 40px;
+}
+
+.start-up-info p {
+    color: #5D6E81;
+    text-align: justify;
+    max-width: 250px;
+}
+
+.blue-box .start-up-info p {
+    color: #ADBCCC;
+}
+
+.empty-box button {
+    background: #635BFF;
+    border: none;
+    border-radius: 30px;
+    padding: 10px 40px;
+    color: #fff;
+}
+
+.blue-box .empty-box button {
+    background: #26D9FE;
+    color: #000;
+}
+
+#pricing-boxes .blue-box {
+    background: #0D2E4E;
+    color: #fff;
+}
+
+#faq #accordion {
+    width: 70%;
+    min-width: 600px;
+    max-width: 900px;
+    margin: auto;
+}
+
+#faq #accordion .card {
+    border: none;
+    border-bottom: 2px solid;
+    border-radius: 0;
+}
+
+#faq #accordion .card-header {
+    border: none;
+    background: none;
+    padding-left: 0;
+    margin-left: -15px;
+}
+
+#faq #accordion .btn-link {
+    padding-left: 0;
+    text-decoration: none;
+    color: #000;
+    display: flex;
+}
+
+#faq .collapsed .arrow {
+    transform: rotate(0);
+    /* transition-delay: 0.5s; */
+    transition: width 0.5s, height 0.5s, transform 0.5s;
+}
+
+#faq .arrow {
+    height: 40px;
+    transform: rotate(90deg);
+    /* transition-delay: 0.5s; */
+    transition: width 0.5s, height 0.5s, transform 0.5s;
+}
+
+#faq .card-body {
+    color: #5D6E81;
+    padding-left: 45px;
+    margin-right: 15%;
+    margin-top: -20px;
+}
+
+@media (max-width:786px) {
+    #why-garcons .flex-items p {
+        min-width: auto;
+    }
+
+    .about-us {
+        line-height: 25px;
+    }
+
+    .padding-body {
+        padding: 10px 15px;
+    }
+
+    .steps-flex {
+        flex-direction: column;
+    }
+
+    .black-button {
+        background: black;
+        color: #fff;
+        border: none;
+        padding: 10px 30px;
+        border-radius: 7px;
+        /* margin: auto; */
+        display: flex;
+    }
+
+    .steps-container {
+        padding: 30px 0 0 15px;
+    }
+
+    .steps-border-bottom {
+        padding-left: 15px;
+    }
+
+    .steps-flex img {
+        width: 100%;
+    }
+
+    .sc-left.steps-container {
+        padding: 30px 0 0 15px;
+    }
+
+    .sc-left .steps-flex img {
+        margin-left: 0;
+    }
+
+    #why-garcons .flex-items {
+        flex-direction: column;
+    }
+
+    #why-garcons .flex-items div {
+        width: 100%;
+    }
+
+    #create-web-designs {
+        flex-direction: column;
+    }
+
+    #create-web-designs div {
+        width: 100%;
+    }
+
+    #create-web-designs img {
+        width: 100%;
+    }
+
+    #create-web-designs.padding-body {
+        padding: 10px 15px 10px 15px;
+    }
+
+    #faq #accordion {
+        width: 100%;
+        min-width: 0;
+        padding: 0 15px;
+    }
+
+    #faq #accordion .card-header {
+        padding-right: 0;
+    }
+    #faq .arrow{
+        height: 32px;
+    }
+    .f-20-m {
+        font-size: 20px !important;
+    }
+    .f-14-m {
+        font-size: 14px !important;
+    }
+    #faq .card-body{
+        margin-right: 0;
+        padding-left: 30px;
+    }
+    #pricing-boxes{
+        flex-direction: column;
+        height: auto;
+    }
+    #pricing-boxes .main-box{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .empty-box button{
+        padding: 10px 32px;
+    }
+    #pricing-boxes .box2 p{
+        /* padding: 0 5px; */
+    }
 }
