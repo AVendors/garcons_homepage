@@ -117,6 +117,7 @@
 
 #create-web-designs div {
     width: 35%;
+    padding-top: 10%;
 }
 
 #create-web-designs img {
@@ -235,6 +236,7 @@
     border: none;
     border-bottom: 2px solid;
     border-radius: 0;
+    background: inherit;
 }
 
 #faq #accordion .card-header {
@@ -270,7 +272,52 @@
     margin-right: 15%;
     margin-top: -20px;
 }
+#about-us.black-bg{
+    background: #000;
+    color: #fff;
+}
+#about-us video{
+    display: flex;
+    max-width: 500px;
+}
 
+#how-we-work{
+    background: #000;
+    color: #fff;
+}
+.step-1-info{
+    display: flex;
+    /* justify-content: space-between; */
+}
+.step-1-info__details{
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    max-width: 325px;
+    margin-left: 5%;
+}
+.step-1-info__details button{
+    background: black;
+    color: #fff;
+    border: none;
+    padding: 10px 50px;
+    border-radius: 7px;
+    /* margin: auto; */
+    display: flex;
+}
+#work-examples img{
+    width: 100%;
+}
+.work-emaples-button{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.grey-body{
+    background:#F7F9FC;
+}
 @media (max-width:786px) {
     #why-garcons .flex-items p {
         min-width: auto;
@@ -328,10 +375,12 @@
 
     #create-web-designs {
         flex-direction: column;
+        align-items: center;
     }
 
     #create-web-designs div {
         width: 100%;
+        padding-top: 2%;
     }
 
     #create-web-designs img {
@@ -377,5 +426,22 @@
     }
     #pricing-boxes .box2 p{
         /* padding: 0 5px; */
+    }
+    #about-us video{
+        margin: 40px auto;
+    }
+    .step-1-info{
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+    }
+    .step-1-info video{
+        width: 100%;
+    }
+    .mt-4-m{
+        margin-top: 1.5rem;
+    }
+    .step-1-info__details{
+        width: 100%;
+        margin-left: 0;
     }
 }

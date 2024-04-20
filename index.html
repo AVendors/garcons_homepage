@@ -10,10 +10,16 @@
         rel="stylesheet">
     <link rel="stylesheet" href="./shared.css" />
     <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./carousel.css" />
     <title>Garcons</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@100;300;400;500;600;700&display=swap"
+        rel="stylesheet">
 
 </head>
 
@@ -24,59 +30,175 @@
     <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 
 
-    <header class="pos-rel">
-        <img src="./assets/images/Group 5.png" alt="Garcons">
+    <header class="pos-rel black-header pt-5">
+        <img src="./assets/images/garcons-title.svg" alt="Garcons" onclick="location.href='./index.html'">
         <div class="hide-mobile">
-            <span>About us</span>
+            <span><a href="about-us.html">About us</a></span>
+            <span> <a data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false"
+                    aria-controls="collapseExample">
+                    Services
+                </a>
+            </span>
             <span><a href="pricing.html">Pricing</a></span>
-            <button>Contact Sales</button>
+            <button class="archivo-700">Book a meeting</button>
+
         </div>
         <div class="hide-desktop">
             <img id="toggle-mobile-nav2" src="./assets/images/navbar-mobile-collapse.svg">
         </div>
     </header>
+    <div class="collapse service-cards pb-5" id="collapseExample" onclick="location.href='./pricing.html'">
+        <div class="card card-body pt-5"  >
+            <div class="service-card p-4">
+                <h5>Website & App Design</h5>
+                <p class="pt-4">Creating visually appealing and functional responsive designs that perform seamlessly
+                    across all
+                    devices.</p>
+            </div>
+        </div>
+        <div class="card card-body pt-5" onclick="location.href='./pricing.html'">
+            <div class="service-card p-4 purple" >
+                <h5>UX Design </h5>
+                <p class="pt-4">Enhancing site navigability and user-friendliness to keep visitors engaged and convert them into customers.</p>
+            </div>
+        </div>
+        <div class="card card-body pt-5" onclick="location.href='./pricing.html'">
+            <div class="service-card p-4 green" >
+                <h5>UI Design</h5>
+                <p class="pt-4">Focusing on the aesthetic and functional aspects of the website’s interface to align with the brand’s identity.</p>
+            </div>
+        </div>
+        <div class="card card-body pt-5" onclick="location.href='./pricing.html'">
+            <div class="service-card p-4 brown">
+                <h5>Graphic Design </h5>
+                <p class="pt-4">Developing custom graphics, icons, and images to boost the site's visual appeal and support brand messaging.</p>
+            </div>
+        </div>
+        <div class="card card-body pt-5" onclick="location.href='./pricing.html'">
+            <div class="service-card p-4 light-blue">
+                <h5>Maintenance & Updates</h5>
+                <p class="pt-4">Regular updates, bug fixes, and tweaks to keep the website running smoothly.</p>
+            </div>
+        </div>
+        <div class="card card-body pt-5" onclick="location.href='./pricing.html'">
+            <div class="service-card p-4 salmon">
+                <h5>SEO</h5>
+                <p class="pt-4">Employing SEO strategies to improve organic search rankings and increase traffic.</p>
+            </div>
+        </div>
+        <div class="card card-body pt-5" onclick="location.href='./pricing.html'">
+            <div class="service-card p-4 bright-blue">
+                <h5>Web Hosting</h5>
+                <p class="pt-4">Offering server space for website hosting, tailored to client needs.</p>
+            </div>
+        </div>
+        <div class="card card-body pt-5" onclick="location.href='./pricing.html'">
+            <div class="service-card p-4 pink">
+                <h5>Analytics and Reporting</h5>
+                <p class="pt-4">Using tools to track website performance and user engagement to inform improvements.</p>
+            </div>
+        </div>
+
+
+    </div>
 
     <div class="backdrop"></div>
 
     <ul id="menu">
-        <span>About us</span>
+        <span><a href="about-us.html">About us</a></span>
+        <span> <a data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false"
+                aria-controls="collapseExample">
+                Services
+            </a>
+        </span>
         <span><a href="pricing.html">Pricing</a></span>
-        <button>Contact Sales</button>
+
+        <button>Book a meeting</button>
     </ul>
 
 
+    <section id="about-us" class="f-28 pt-5 archivo-500 about-us f-16-m black-bg padding-body">
+        <br />
+        First impression matters.<br />
+        Your store design & code quality matters. <br />
+        How customers perceives your brand matters. <br />
+
+        <span class="do-it-right mt-5 archivo-900 f-30">Do it right.</span><br />
+        <video class="mx-auto" preload="auto" width="50%" height="auto" autoplay muted loop playsinline
+            poster="./assets/images/cat-poster.png">
+            <source src="https://avendors.s3.amazonaws.com/Static/Cat+_+headline.mp4" type="video/mp4">
+        </video>
+    </section>
+
+    <section id="trusted-teams" class="trusted-teams mt-5">
+        <h1 class="text-center f-28 archivo-800 mb-4 pb-4 pt-5 f-22-m">Trusted by teams at</h1>
+        <div class="carousel mt-4"
+            data-flickity='{ "freeScroll": true, "contain": true, "prevNextButtons": false, "pageDots": false,"wrapAround": true,"autoPlay": 1500 }'>
+            <img src="./assets/images/SVG/0d9aa9b05e89ce780ff78ee4a75fee2c96744292-90x22.svg" />
+            <img src="./assets/images/SVG/10030cd64a680afb8e98dee4483db66d26ef09d1-91x18.svg" />
+            <img src="./assets/images/SVG/6c7675b54cb903eddcc324cd17541d190610de1c-510x101.svg" />
+            <img src="./assets/images/SVG/84ae3c1b89f2e32d3fed6298e79b5c60a69b99c9-79x20.svg" />
+            <img src="./assets/images/SVG/962518cdf66a8669ac335378ad252c16bb4ae581-133x18.svg" />
+            <img src="./assets/images/SVG/ab05e1a185076f6612ad3c373d95735362135a74-71x22.svg" />
+            <img src="./assets/images/SVG/bd96623069bc62f6da16d2225cfcefef39f404c6-98x49.svg" />
+            <img src="./assets/images/SVG/ec94fd9f63d827b106e78931b08b134faa3173be-92x18.svg" />
+            <img src="./assets/images/SVG/nike-4-logo-svg-vector.svg" />
+            <img src="./assets/images/SVG/plus_new_logo.svg" />
+            <img src="./assets/images/SVG/saks-fifth-avenue.svg" />
+            <!-- Repeat -->
+            <img src="./assets/images/SVG/0d9aa9b05e89ce780ff78ee4a75fee2c96744292-90x22.svg" />
+            <img src="./assets/images/SVG/10030cd64a680afb8e98dee4483db66d26ef09d1-91x18.svg" />
+            <img src="./assets/images/SVG/6c7675b54cb903eddcc324cd17541d190610de1c-510x101.svg" />
+            <img src="./assets/images/SVG/84ae3c1b89f2e32d3fed6298e79b5c60a69b99c9-79x20.svg" />
+            <img src="./assets/images/SVG/962518cdf66a8669ac335378ad252c16bb4ae581-133x18.svg" />
+            <img src="./assets/images/SVG/ab05e1a185076f6612ad3c373d95735362135a74-71x22.svg" />
+            <img src="./assets/images/SVG/bd96623069bc62f6da16d2225cfcefef39f404c6-98x49.svg" />
+            <img src="./assets/images/SVG/ec94fd9f63d827b106e78931b08b134faa3173be-92x18.svg" />
+            <img src="./assets/images/SVG/nike-4-logo-svg-vector.svg" />
+            <img src="./assets/images/SVG/plus_new_logo.svg" />
+            <img src="./assets/images/SVG/saks-fifth-avenue.svg" />
+            <!-- Repeat -->
+            <img src="./assets/images/SVG/0d9aa9b05e89ce780ff78ee4a75fee2c96744292-90x22.svg" />
+            <img src="./assets/images/SVG/10030cd64a680afb8e98dee4483db66d26ef09d1-91x18.svg" />
+            <img src="./assets/images/SVG/6c7675b54cb903eddcc324cd17541d190610de1c-510x101.svg" />
+            <img src="./assets/images/SVG/84ae3c1b89f2e32d3fed6298e79b5c60a69b99c9-79x20.svg" />
+            <img src="./assets/images/SVG/962518cdf66a8669ac335378ad252c16bb4ae581-133x18.svg" />
+            <img src="./assets/images/SVG/ab05e1a185076f6612ad3c373d95735362135a74-71x22.svg" />
+            <img src="./assets/images/SVG/bd96623069bc62f6da16d2225cfcefef39f404c6-98x49.svg" />
+            <img src="./assets/images/SVG/ec94fd9f63d827b106e78931b08b134faa3173be-92x18.svg" />
+            <img src="./assets/images/SVG/nike-4-logo-svg-vector.svg" />
+            <img src="./assets/images/SVG/plus_new_logo.svg" />
+            <img src="./assets/images/SVG/saks-fifth-avenue.svg" />
+
+        </div>
+        <!-- <img src="./assets/images/trusted full screnshot.png" class="" alt="Garcons" /> -->
+    </section>
+
+    <section id="how-we-work" class="padding-body mt-7 pt-4 pb-4">
+        <h1 class="archivo-800 f-22-m">How we work.</h1>
+    </section>
 
     <container class="padding-body">
-        <section id="about-us" class="f-33 mt-3 archivo-500 about-us f-16-m">
-            First impression matters.<br />
-            Your store design & code quality matters. <br />
-            How customers perceives your brand matters. <br />
-
-            <span class="do-it-right mt-4 archivo-800">Do it right.</span>
-        </section>
         <section id="step-1" class="step-1 mt-5">
-            <p class="archivo-700">STEP 1 : Inspiration board</p>
+            <p class="archivo-700 f-14-m">STEP 1 : Inspiration board</p>
+            <h1 class="pt-2 pb-5 archivo-500 f-22-m pb-4-m">Brainstorm</h1>
             <!-- <img src="./assets/images/figma2.png" alt="Garcons" /> -->
-            <video preload="auto" width="100%" height="auto" autoplay muted loop
-                playsinline poster="./assets/images/figma2.png">
-                <source src="https://avendors.s3.amazonaws.com/Static/garcons-step1.mp4" type="video/mp4"
-                    >
-            </video>
-        </section>
-        <section id="trusted-teams" class="trusted-teams mt-5">
-            <div class="carousel"
-                data-flickity='{ "freeScroll": true, "contain": true, "prevNextButtons": false, "pageDots": false }'>
-                <div class="carousel-cell"></div>
-                <div class="carousel-cell"></div>
-                <div class="carousel-cell"></div>
-                <div class="carousel-cell"></div>
-                <div class="carousel-cell"></div>
+            <div class="step-1-info">
+                <video preload="auto" width="60%" height="auto" autoplay muted loop playsinline
+                    poster="./assets/images/figma2.png" class="mt-4-m">
+                    <source src="https://avendors.s3.amazonaws.com/Static/garcons-step1.mp4" type="video/mp4">
+                </video>
+                <div class="step-1-info__details archivo-500 ">
+                    We will assign your personal UX/UI designer to understand your business's functions and potential.
+                    <button class="mt-4 hide-mobile">Next</button>
+                </div>
             </div>
-            <!-- <img src="./assets/images/trusted full screnshot.png" class="" alt="Garcons" /> -->
+
         </section>
+
 
     </container>
-    <section id="step-2" class="mt-5">
+    <section id="step-2" class="mt-4">
         <container class="steps-container ">
             <p class="archivo-700">STEP 2 : Design</p>
             <h2 class="f-36 archivo-700 mt-3">Co-design</h2>
@@ -89,7 +211,9 @@
                 <img src="./assets/images/step-2.png" />
             </div>
         </container>
-        <div class="steps-border-bottom"> <button class="mt-3 hide-desktop black-button">Next</button></div>
+        <div class="steps-border-bottom">
+            <!-- <button class="mt-3 hide-desktop black-button">Next</button> -->
+        </div>
     </section>
     <section id="step-3" class="">
         <container class="steps-container sc-left">
@@ -104,7 +228,9 @@
                 <img class="hide-desktop" src="./assets/images/step-3.png" />
             </div>
         </container>
-        <div class="steps-border-bottom"> <button class="mt-3 hide-desktop black-button">Next</button></div>
+        <div class="steps-border-bottom">
+            <!-- <button class="mt-3 hide-desktop black-button">Next</button> -->
+        </div>
     </section>
     <section id="step-4" class="">
         <container class="steps-container ">
@@ -118,7 +244,9 @@
                 <img src="./assets/images/step-4.png" />
             </div>
         </container>
-        <div class="steps-border-bottom"> <button class="mt-3 hide-desktop black-button">Next</button></div>
+        <div class="steps-border-bottom">
+            <!-- <button class="mt-3 hide-desktop black-button">Next</button> -->
+        </div>
     </section>
     <section id="work-examples" class="padding-body mt-5">
         <h2 class="archivo-700">Work Examples</h2>
@@ -126,7 +254,12 @@
             collaboration with companies across industries, we build scalable brand systems and products that leverage
             emerging behaviors and technologies, and ultimately unlock potential. Learn more about what we can do for
             you.</p>
-        <button class="mt-3">Book a meeting</button>
+        <img src="./assets/images/work-examples.png" />
+        <div class="work-emaples-button">
+            <span class="archivo-600 f-20"># Ecom</span>
+            <button class="mt-3">Next</button>
+        </div>
+
     </section>
     <section id="why-garcons" class="padding-body mt-5">
         <h2 class="mt-5">Why Garçons?</h2>
@@ -158,7 +291,8 @@
     <section id="create-web-designs" class="padding-body pt-5">
         <div class="">
             <h1 class="archivo-800">
-                Create <br />beautiful,<br /> responsive<br /> web designs</h1>
+                THE A-TEAM
+            </h1>
             <p class="mt-4 archivo-500">Garçons is where tech elites and brands design the world’s best websites
                 together. From wireframe to design to prototype to code—we got you!</p>
             <button class="mt-3 hide-mobile">Book a meeting</button>
@@ -167,9 +301,57 @@
 
         <button class="mt-3 hide-desktop">Book a meeting</button>
     </section>
-    <footer class=""></footer>
+    <footer class="mt-5">
+        <p class="footer-info ibm-plex-mono-bold f-28 f-22-m">
+            We are a team of creators, artists, technologists, and entrepreneurs dedicated to building innovative
+            storefronts for modern brands to thrive. We immerse ourselves in our customers' businesses, adopting your
+            perspective to amplify your vision. Our passion is to outperform competitors by avoiding cookie-cutter
+            solutions. We manage to keep costs down thanks to our global team, primarily based in India.
+        </p>
+        <div class="footer-black">
+            <div class="p-5 padding-footer-1">
+                <p class="mb-1">Want to join our community?</p>
+                <p class="f-14 mb-4">Subscribe to get the latest insight in the world of tech.</p>
+                <div class="subscribe-container mt-5">
+                    <input class="p-4" type="text" placeholder="EMAIL" id="enter-email" />
+                    <input class="p-4" type="text" placeholder="NAME" id="enter-name" />
+                    <button class="p-4" onclick="validateDownloadForm()">Subscribe</button>
+                </div>
+                <img class="mt-3" src="./assets/images/insta.svg" />
+            </div>
+            <div class="footer-info__links padding-footer-2">
+                <div class="p-5">
+                    <h3 class="f-18 pb-3">Company</h3>
+                    <span class="pb-3 f-14">About Us</span>
+                    <span class="pb-3 f-14"><a href="pricing.html">Pricing</a></span>
+                    <span class="pb-3 f-14"><a href="pricing.html">Contact Us</a></span>
+                    <span class="pb-3 f-14">FAQ</span>
+                </div>
+                <div class="pt-5 pr-4">
+                    <h3 class="f-18 pb-3">Terms & Policy</h3>
+                    <span class="pb-3 f-14">Terms & Policies</span>
+                    <span class=" f-14">Privacy </span>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <img class="garcons-footer-img" src="./assets/images/Group 5.png" alt="Garcons">
+    <hr>
+    <div class="padding-body">&copy;2024, Garcons Inc.</div>
 
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script src="./assets/js/common.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
 </body>
 
 
