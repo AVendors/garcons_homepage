@@ -1,5 +1,5 @@
 .about-us {
-    line-height: 38px;
+    line-height: 42px;
 }
 
 .do-it-right {
@@ -36,9 +36,14 @@
 }
 
 .steps-border-bottom {
-    border-top: 1px solid #B2B2B2;
-    padding-bottom: 50px;
+    border-top: 1px solid #a6a66991;
+    padding-bottom: 30px;
 }
+
+#step-4 .steps-border-bottom {
+    border-color: #777777;
+}
+
 
 .steps-flex p {
     max-width: 275px;
@@ -58,6 +63,7 @@
 
 #step-3 {
     background: #C8B8FF;
+    margin-bottom: -7px;
 }
 
 .sc-left .steps-flex p {
@@ -126,6 +132,7 @@
 
 #create-web-designs p {
     text-align: justify;
+    max-width: 275px;
 }
 
 #create-web-designs.padding-body {
@@ -164,11 +171,12 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 12%;
+    /* padding-top: 12%; */
+    justify-content: center;
 }
 
 #pricing-boxes .blue-box .box2 {
-    padding-top: 18%;
+    /* padding-top: 18%; */
 }
 
 #pricing-boxes .box2 p {
@@ -226,7 +234,7 @@
 }
 
 #faq #accordion {
-    width: 70%;
+    width: 60%;
     min-width: 600px;
     max-width: 900px;
     margin: auto;
@@ -260,7 +268,7 @@
 }
 
 #faq .arrow {
-    height: 40px;
+    height: 30px;
     transform: rotate(90deg);
     /* transition-delay: 0.5s; */
     transition: width 0.5s, height 0.5s, transform 0.5s;
@@ -272,33 +280,39 @@
     margin-right: 15%;
     margin-top: -20px;
 }
-#about-us.black-bg{
+
+#about-us.black-bg {
     background: #000;
     color: #fff;
 }
-#about-us video{
+
+#about-us video {
     display: flex;
     max-width: 500px;
 }
 
-#how-we-work{
+#how-we-work {
     background: #000;
     color: #fff;
 }
-.step-1-info{
+
+.step-1-info {
     display: flex;
     /* justify-content: space-between; */
 }
-.step-1-info__details{
+
+.step-1-info__details {
     width: 35%;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
-    max-width: 325px;
+    max-width: 275px;
     margin-left: 5%;
+    text-align: justify;
 }
-.step-1-info__details button{
+
+.step-1-info__details button {
     background: black;
     color: #fff;
     border: none;
@@ -307,17 +321,46 @@
     /* margin: auto; */
     display: flex;
 }
-#work-examples img{
+
+#work-examples img {
     width: 100%;
 }
-.work-emaples-button{
+
+.work-emaples-button {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.grey-body{
-    background:#F7F9FC;
+
+.grey-body,
+header.grey-body {
+    background: #F7F9FC;
 }
+
+.grey-bg-step1 {
+    background: #F8F8F8;
+}
+
+.step-1-info video {
+    margin-left: -40px;
+}
+
+#work-examples p {
+    max-width: 500px;
+}
+
+#faq{
+    color: #000;
+}
+
+@media (max-width:1100px) {
+    #pricing-boxes .main-box{
+        height: 80%;
+    min-height: 480px;
+    max-height: 700px;
+    }
+}
+
 @media (max-width:786px) {
     #why-garcons .flex-items p {
         min-width: auto;
@@ -346,7 +389,7 @@
     }
 
     .steps-container {
-        padding: 30px 0 0 15px;
+        padding: 10px 0 0 15px;
     }
 
     .steps-border-bottom {
@@ -358,7 +401,13 @@
     }
 
     .sc-left.steps-container {
-        padding: 30px 0 0 15px;
+        padding: 10px 0 0 15px;
+    }
+
+    #work-examples p,
+    #why-garcons .max-85-width,
+    #create-web-designs .max-85-width {
+        max-width: 85%;
     }
 
     .sc-left .steps-flex img {
@@ -400,48 +449,84 @@
     #faq #accordion .card-header {
         padding-right: 0;
     }
-    #faq .arrow{
+
+    #faq .arrow {
         height: 32px;
     }
-    .f-20-m {
-        font-size: 20px !important;
-    }
-    .f-14-m {
-        font-size: 14px !important;
-    }
-    #faq .card-body{
+
+    #faq .card-body {
         margin-right: 0;
         padding-left: 30px;
     }
-    #pricing-boxes{
+
+    #pricing-boxes {
         flex-direction: column;
         height: auto;
     }
-    #pricing-boxes .main-box{
+
+    #pricing-boxes .main-box {
         width: 100%;
         margin-bottom: 20px;
+        flex-wrap: wrap;
     }
-    .empty-box button{
+
+    .empty-box button {
         padding: 10px 32px;
     }
-    #pricing-boxes .box2 p{
+
+    #pricing-boxes .box2 p {
         /* padding: 0 5px; */
     }
-    #about-us video{
+
+    #about-us video {
         margin: 40px auto;
+        width: 65%;
     }
-    .step-1-info{
+
+    .step-1-info {
         flex-wrap: wrap;
         flex-direction: column-reverse;
     }
-    .step-1-info video{
-        width: 100%;
-    }
-    .mt-4-m{
-        margin-top: 1.5rem;
-    }
-    .step-1-info__details{
+
+    .step-1-info video {
         width: 100%;
         margin-left: 0;
+    }
+
+    .mt-4-m {
+        margin-top: 1.5rem;
+    }
+
+    .step-1-info__details {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    #pricing-boxes .empty-box {
+        width: 100%;
+    }
+
+    #pricing-boxes .box2 {
+        width: 100%;
+        padding-top: 12%;
+        padding-bottom: 10%;
+    }
+
+    .start-up-info p {
+        max-width: 300px;
+    }
+
+    #pricing-boxes .blue-box .box2 {
+        padding-top: 12%;
+        padding-bottom: 10%;
+    }
+
+    .pb-0-m,
+    #trusted-teams.pb-0-m {
+        padding-bottom: 0 !important;
+    }
+
+    #step-3 {
+        margin-bottom: 0;
     }
 }

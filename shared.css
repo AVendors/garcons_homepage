@@ -115,8 +115,16 @@ body {}
     display: block;
 }
 
+.f-16 {
+    font-size: 16px !important;
+}
+
 .f-18 {
     font-size: 18px;
+}
+
+.f-24 {
+    font-size: 24px !important;
 }
 
 .f-26 {
@@ -131,13 +139,27 @@ body {}
     font-size: 30px;
 }
 
+.f-32 {
+    font-size: 32px;
+}
+
 .f-33 {
     font-size: 33px;
 }
 
+.f-34 {
+    font-size: 34px;
+}
+
+.f-35 {
+    font-size: 35px;
+}
+
+
 .f-36 {
     font-size: 36px;
 }
+
 
 .justify-content {
     text-align: justify;
@@ -228,12 +250,16 @@ header.black-header {
     margin-top: 5rem;
 }
 
+.f-19 {
+    font-size: 19px;
+}
+
 .f-20 {
-    font-size: 20px;
+    font-size: 20px !important;
 }
 
 .f-22 {
-    font-size: 22px;
+    font-size: 22px !important;
 }
 
 .ibm-plex-mono-thin {
@@ -371,6 +397,10 @@ footer {
     font-size: 14px;
 }
 
+.f-15 {
+    font-size: 15px;
+}
+
 .service-cards {
     background: #F4F4F4;
     display: flex;
@@ -378,40 +408,66 @@ footer {
     flex-wrap: wrap;
 }
 
-.service-cards .card-body{
+.service-cards .card-body {
     background: #F4F4F4;
     border-radius: 0;
-    padding: 10px 30px;
+    padding: 10px 15px;
     width: 32%;
     border: 0;
     max-width: 32%;
 }
+
 .service-card {
     background: #FBFD5D;
     border-radius: 10px;
     box-shadow: 0px 4px 4px 0px #ABABAB40;
     min-height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
-.service-card.purple{
+
+.service-card.purple {
     background: #D9CDFF;
 }
-.service-card.green{
+
+.service-card.green {
     background: #95FFC5;
 }
-.service-card.brown{
+
+.service-card.brown {
     background: #FFD393;
 }
-.service-card.light-blue{
+
+.service-card.light-blue {
     background: #B8F2FF;
 }
-.service-card.salmon{
+
+.service-card.salmon {
     background: #FFCBBF;
 }
-.service-card.bright-blue{
+
+.service-card.bright-blue {
     background: #ACFFF6;
 }
-.service-card.pink{
+
+.service-card.pink {
     background: #FB97E1;
+}
+
+header.open {
+    position: sticky;
+    top: 0;
+    z-index: 2;
+}
+
+#why-garcons .max-desktop-width {
+    max-width: 600px;
+}
+
+header .selected {
+    text-decoration: underline;
+    color: #635BFF;
 }
 
 @media (min-width:1375px) {
@@ -449,7 +505,7 @@ footer {
     }
 
     .f-16-m {
-        font-size: 16px;
+        font-size: 16px !important;
     }
 
     .f-22-m {
@@ -511,12 +567,61 @@ footer {
     .f-22-m {
         font-size: 22px;
     }
-    .service-cards .card-body{
+
+    .f-18-m {
+        font-size: 18px;
+    }
+
+    .service-cards .card-body {
         background: #F4F4F4;
         border-radius: 0;
-        padding: 10px 30px;
+        padding: 2px 30px;
         width: 100%;
         border: 0;
         max-width: 100%;
+    }
+
+    #pricing-boxes.pt-3-m,
+    .pt-3-m {
+        padding-top: 0.5rem !important;
+    }
+
+    #how-we-work.pt-3-m {
+        padding-bottom: 0.9rem !important;
+        padding-top: 0.9rem !important;
+    }
+
+    .book-a-meeting-mobile {
+        width: 100px;
+        padding: 7px;
+        font-size: 11px;
+        margin-right: 10px;
+        cursor: pointer;
+    }
+
+    .f-20-m {
+        font-size: 20px !important;
+    }
+
+    .f-14-m {
+        font-size: 14px !important;
+    }
+
+    .f-28-m {
+        font-size: 28px !important;
+    }
+
+    .f-30-m {
+        font-size: 30px !important;
+    }
+
+    #why-garcons .pt-0-m,
+    .pt-0-m {
+        padding-top: 0 !important;
+    }
+
+    #collapseExample .pt-2-m,
+    .pt-2-m {
+        padding-top: 0.7rem !important;
     }
 }

@@ -54,9 +54,43 @@ async function submitDownloadForm() {
     data: {
       email: email,
       name: enterdName,
-      list:'4fcd9471-9662-492a-b8cc-7b51ffa6dce6'
+      list: "4fcd9471-9662-492a-b8cc-7b51ffa6dce6",
     },
   }).then(function (response) {
-   console.log("Submitted")
+    console.log("Submitted");
   });
+}
+
+// Header to appear on scroll up
+var lastScrollTop = 0;
+var header = document.querySelector("header");
+
+// element should be replaced with the actual target element on which you have applied scroll, use window in case of no target element.
+window.addEventListener(
+  "scroll",
+  function () {
+    // or window.addEventListener("scroll"....
+    var st = window.pageYOffset || document.documentElement.scrollTop;
+    if (st > lastScrollTop) {
+      // downscroll code
+      header.classList.remove("open");
+    } else if (st < lastScrollTop) {
+      // upscroll code
+      header.classList.add("open");
+    } // else was horizontal scroll
+
+    lastScrollTop = st <= 0 ? 0 : st; // For Mobile or negative scrolling
+  },
+  false
+);
+
+///END
+
+async function changeheaderColor() {
+  console.log("heughbu")
+  // if ($('#main-header').hasClass("service-open")) {
+  //   $('#main-header').classList.remove("service-open");
+  // } else {
+    $('#main-header').classList.add("service-open");
+  // }
 }
