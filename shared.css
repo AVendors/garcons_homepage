@@ -98,7 +98,7 @@ header button {
     background: black;
     color: #fff;
     border: none;
-    padding: 15px 40px;
+    padding: 12px 27px;
     border-radius: 7px;
 }
 
@@ -160,6 +160,9 @@ body {}
     font-size: 36px;
 }
 
+.f-40 {
+    font-size: 40px;
+}
 
 .justify-content {
     text-align: justify;
@@ -462,12 +465,55 @@ header.open {
 }
 
 #why-garcons .max-desktop-width {
-    max-width: 600px;
+    max-width: 520px;
 }
 
 header .selected {
     text-decoration: underline;
     color: #635BFF;
+}
+
+#why-garcons.mt-5 {
+    margin-top: 110px !important;
+}
+
+.line-1 {
+    position: relative;
+    top: 50%;
+    width: auto;
+    /* margin: 0 auto; */
+    border-right: 2px solid rgba(255, 255, 255, .75);
+    /* font-size: 180%; */
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    /* transform: translateY(-50%);     */
+}
+
+/* Animation */
+.anim-typewriter {
+    animation: typewriter 4s steps(44) 1s 1 normal both,
+        blinkTextCursor 500ms steps(44) infinite normal;
+}
+
+@keyframes typewriter {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 185px;
+    }
+}
+
+@keyframes blinkTextCursor {
+    from {
+        border-right-color: rgba(255, 255, 255, .75);
+    }
+
+    to {
+        border-right-color: transparent;
+    }
 }
 
 @media (min-width:1375px) {
@@ -501,7 +547,7 @@ header .selected {
 
     .black-header #toggle-mobile-nav2 {
         -webkit-filter: invert(100%);
-        margin-right: 20px;
+        margin-right: 0px;
     }
 
     .f-16-m {
@@ -593,10 +639,11 @@ header .selected {
 
     .book-a-meeting-mobile {
         width: 100px;
-        padding: 7px;
+        padding: 10px 7px;
         font-size: 11px;
         margin-right: 10px;
         cursor: pointer;
+        border-radius: 2px;
     }
 
     .f-20-m {
@@ -605,6 +652,14 @@ header .selected {
 
     .f-14-m {
         font-size: 14px !important;
+    }
+
+    .f-12-m {
+        font-size: 12px !important;
+    }
+
+    .f-26-m {
+        font-size: 26px !important;
     }
 
     .f-28-m {
@@ -616,6 +671,7 @@ header .selected {
     }
 
     #why-garcons .pt-0-m,
+    #step-1 .pt-0-m,
     .pt-0-m {
         padding-top: 0 !important;
     }
@@ -623,5 +679,55 @@ header .selected {
     #collapseExample .pt-2-m,
     .pt-2-m {
         padding-top: 0.7rem !important;
+    }
+
+    .pt-4-m {
+        padding-top: 1.5rem !important;
+    }
+
+    #why-garcons.mt-5 {
+        margin-top: 40px !important;
+    }
+
+    .archivo-800-m {
+        font-weight: 800 !important;
+    }
+
+    .archivo-700-m {
+        font-weight: 700 !important;
+    }
+
+    #step-2 .mt-3-m,
+    #step-3 .mt-3-m,
+    #step-4 .mt-3-m {
+        margin-top: 40px !important;
+    }
+    #step-2 .mt-2-m,
+    #step-3 .mt-2-m,
+    #step-4 .mt-2-m {
+        margin-top: 8px !important;
+    }
+    
+
+    .mt-3-m {
+        margin-top: 1.5rem !important;
+    }
+
+
+    @keyframes typewriter {
+        from {
+            width: 0;
+        }
+
+        to {
+            width: 127px;
+        }
+    }
+
+    #work-examples .pt-5{
+        padding-top: 1.2rem !important;
+    }
+    .f-34-m{
+        font-size: 34px !important;
     }
 }
