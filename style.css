@@ -1,5 +1,6 @@
 .about-us {
     line-height: 42px;
+    display: flex;
 }
 
 .do-it-right {
@@ -41,7 +42,7 @@
 }
 
 #step-4 .steps-border-bottom {
-    
+
     border-top: 1px solid #437741;
 }
 
@@ -94,7 +95,7 @@
     border-radius: 7px;
 }
 
-#create-web-designs button{
+#create-web-designs button {
     padding: 10px 30px;
 }
 
@@ -137,7 +138,7 @@
 
 #create-web-designs p {
     text-align: justify;
-    max-width: 275px;
+    max-width: 300px;
 }
 
 #create-web-designs.padding-body {
@@ -289,11 +290,15 @@
 #about-us.black-bg {
     background: #000;
     color: #fff;
+    overflow-x: hidden;
 }
 
 #about-us video {
     display: flex;
-    max-width: 500px;
+    max-width: 600px;
+    width: 100%;
+    margin-right: -40px !important;
+    margin-bottom: -10px;
 }
 
 #how-we-work {
@@ -354,15 +359,35 @@ header.grey-body {
     max-width: 450px;
 }
 
-#faq{
+#faq {
     color: #000;
 }
 
+#work-examples .icon {
+    height: 35px;
+    width: auto;
+    cursor: pointer;
+}
+
+#work-examples .icon.icon-right {
+    transform: rotate(180deg);
+    padding-right: 25px;
+}
+
+#work-examples .icons {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.hide {
+    display: none;
+}
+
 @media (max-width:1100px) {
-    #pricing-boxes .main-box{
+    #pricing-boxes .main-box {
         height: 80%;
-    min-height: 480px;
-    max-height: 700px;
+        min-height: 480px;
+        max-height: 700px;
     }
 }
 
@@ -373,6 +398,7 @@ header.grey-body {
 
     .about-us {
         line-height: 25px;
+        flex-direction: column;
     }
 
     .padding-body {
@@ -439,7 +465,8 @@ header.grey-body {
         padding-top: 2%;
     }
 
-    #create-web-designs img {
+    #create-web-designs img,
+    #create-web-designs video {
         width: 100%;
     }
 
@@ -486,8 +513,9 @@ header.grey-body {
     }
 
     #about-us video {
-        margin: 40px auto 10px;
-        width: 65%;
+        margin: -30px auto -10px;
+        width: 75%;
+        margin-right: -50px !important;
     }
 
     .step-1-info {

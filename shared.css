@@ -91,7 +91,7 @@ header img {
 }
 
 header span {
-    margin-right: 30px;
+    margin-right: 60px;
 }
 
 header button {
@@ -113,6 +113,10 @@ body {}
 .padding-body {
     padding: 10px 30px;
     display: block;
+}
+
+.f-12 {
+    font-size: 12px;
 }
 
 .f-16 {
@@ -188,6 +192,7 @@ body {}
     align-items: center;
     padding-top: 40%;
     display: none;
+    padding-left: 0;
 }
 
 #menu span {
@@ -479,7 +484,7 @@ header .selected {
 
 .line-1 {
     position: relative;
-    top: 50%;
+    /* top: 50%; */
     width: auto;
     /* margin: 0 auto; */
     border-right: 2px solid rgba(255, 255, 255, .75);
@@ -643,7 +648,11 @@ header .selected {
         font-size: 11px;
         margin-right: 10px;
         cursor: pointer;
-        border-radius: 2px;
+        border-radius: 5px;
+    }
+
+    .f-19-m {
+        font-size: 19px !important;
     }
 
     .f-20-m {
@@ -702,12 +711,17 @@ header .selected {
     #step-4 .mt-3-m {
         margin-top: 40px !important;
     }
+
     #step-2 .mt-2-m,
     #step-3 .mt-2-m,
     #step-4 .mt-2-m {
         margin-top: 8px !important;
     }
-    
+
+
+    #work-examples .mt-2-m {
+        margin-top: 8px !important;
+    }
 
     .mt-3-m {
         margin-top: 1.5rem !important;
@@ -724,10 +738,21 @@ header .selected {
         }
     }
 
-    #work-examples .pt-5{
+    #work-examples .pt-5 {
         padding-top: 1.2rem !important;
     }
-    .f-34-m{
+
+    .f-34-m {
         font-size: 34px !important;
+    }
+
+    .garcons-footer-img {
+        padding: 10px 10px;
+    }
+
+    #step-2 video,
+    #step-3 video,
+    #step-4 video {
+        margin-left: -15px;
     }
 }

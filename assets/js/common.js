@@ -87,10 +87,49 @@ window.addEventListener(
 ///END
 
 async function changeheaderColor() {
-  console.log("heughbu")
   // if ($('#main-header').hasClass("service-open")) {
   //   $('#main-header').classList.remove("service-open");
   // } else {
-    $('#main-header').classList.add("service-open");
+  $("#main-header").classList.add("service-open");
   // }
 }
+
+var currentVideo = 1;
+var nextVideo = 2;
+var FirstVideo = 1;
+var LastVideo = 10;
+
+async function moveRightImg() {
+  $(".video-" + currentVideo).addClass("hide");
+  console.log(".video-" + currentVideo)
+  if (currentVideo < LastVideo) {
+    currentVideo += 1;
+  } else {
+    currentVideo = FirstVideo;
+  }
+
+  $(".video-" + currentVideo).removeClass("hide");
+  // if (nextVideo < LastVideo) {
+  //   nextVideo += 1;
+  // } else {
+  //   nextVideo = FirstVideo;
+  // }
+}
+
+async function moveLeftImg() {
+  $(".video-" + currentVideo).addClass("hide");
+  if (currentVideo > FirstVideo) {
+    currentVideo -= 1;
+  } else {
+    currentVideo = LastVideo;
+  }
+  $(".video-" + currentVideo).removeClass("hide");
+  // if (nextVideo > FirstVideo) {
+  //   nextVideo -= 1;
+  // } else {
+  //   nextVideo = LastVideo;
+  // }
+}
+
+
+setTimeout("moveRightImg(5)", ((5) * 1000));
