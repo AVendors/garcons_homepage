@@ -782,7 +782,7 @@ header .selected {
         margin-left: -15px;
     }
 
-    #about-us.pt-2-m{
-        padding-top: 1rem !important;
+    #about-us .pt-2-m{
+        padding-top: 0rem !important;
     }
 }
