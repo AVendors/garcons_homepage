@@ -133,3 +133,6 @@ async function moveLeftImg() {
 
 
 setTimeout("moveRightImg(5)", ((5) * 1000));
+
+
+document.getElementsByClassName('video-autoplay').play();

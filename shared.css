@@ -503,7 +503,7 @@ header .selected {
 }
 
 .anim-typewriter.line-2 {
-    animation: typewriter2 4s steps(44) 1s 1 normal both,
+    animation: typewriter2 4s steps(44) 5s 1 normal both,
         blinkTextCursor 500ms steps(44) infinite normal;
 }
 

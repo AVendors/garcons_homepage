@@ -382,7 +382,14 @@ header.grey-body {
 }
 
 .hide {
-    display: none;
+    display: none !important;
+}
+
+#work-examples video {
+    max-width: 1000px;
+    margin: auto;
+    display: flex;
+    border-radius: 10px;
 }
 
 @media (max-width:1100px) {
@@ -570,5 +577,12 @@ header.grey-body {
 
     #step-4 {
         background: #1bb14d;
+    }
+
+    #work-examples video {
+        max-width: none;
+        margin: auto;
+        display: flex;
+        border-radius: 0;
     }
 }
