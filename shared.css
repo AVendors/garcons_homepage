@@ -502,9 +502,9 @@ header .selected {
         blinkTextCursor 500ms steps(44) infinite normal;
 }
 
-.anim-typewriter.line-2{
+.anim-typewriter.line-2 {
     animation: typewriter2 4s steps(44) 1s 1 normal both,
-    blinkTextCursor 500ms steps(44) infinite normal;
+        blinkTextCursor 500ms steps(44) infinite normal;
 }
 
 @keyframes typewriter {
@@ -758,7 +758,7 @@ header .selected {
         from {
             width: 0;
         }
-    
+
         to {
             width: 180px;
         }
@@ -784,5 +784,20 @@ header .selected {
 
     #about-us .pt-2-m{
         padding-top: 0rem !important;
+    }
+    #about-us.pt-2-m {
+        padding-top: 1rem !important;
+    }
+
+    #trusted-teams.mt-2-m {
+        margin-top: 1.5rem !important;
+    }
+
+    #trusted-teams .pt-5 {
+        padding-top: 2rem !important;
+    }
+
+    #trusted-teams .pb-4-m {
+        padding-bottom: 0 !important;
     }
 }
