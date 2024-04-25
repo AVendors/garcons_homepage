@@ -781,4 +781,8 @@ header .selected {
     #step-4 video {
         margin-left: -15px;
     }
+
+    #about-us.pt-2-m{
+        padding-top: 1rem !important;
+    }
 }
