@@ -502,6 +502,11 @@ header .selected {
         blinkTextCursor 500ms steps(44) infinite normal;
 }
 
+.anim-typewriter.line-2{
+    animation: typewriter2 4s steps(44) 1s 1 normal both,
+    blinkTextCursor 500ms steps(44) infinite normal;
+}
+
 @keyframes typewriter {
     from {
         width: 0;
@@ -509,6 +514,16 @@ header .selected {
 
     to {
         width: 185px;
+    }
+}
+
+@keyframes typewriter2 {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 240px;
     }
 }
 
@@ -736,6 +751,16 @@ header .selected {
 
         to {
             width: 127px;
+        }
+    }
+
+    @keyframes typewriter2 {
+        from {
+            width: 0;
+        }
+    
+        to {
+            width: 180px;
         }
     }
 
