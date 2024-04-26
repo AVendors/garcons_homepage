@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Garçons</title>
+  <!-- <link rel="shortcut icon" href="../../../images/Blue-_-Red.ico" /> -->
+
+  <!-- Importing Styles -->
+  <!-- <link rel="stylesheet" href="./customold.css" /> -->
+
+
+  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+
+</head>
+<style>
+  .avmade-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+    border-bottom: 1px solid rgba(11, 78, 144, 0.2);
+    color: #004E93;
+  }
+
+  .custom-thank-you.avmade-body {
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .custom-thank-you .lottie-main {
+    font-size: 21px;
+    font-weight: 700;
+    text-align: center;
+    color: #004E93;
+    line-height: 23px;
+    margin-top: 25px;
+  }
+
+  .custom-thank-you .lottie-subtext {
+    font-size: 18px;
+    text-align: center;
+    color: #769EC1;
+    margin-top: 15px;
+  }
+
+  .hide-tablet {
+    display: none;
+  }
+
+  .hide-desktop {
+    display: block;
+  }
+
+  .avmade-header img {
+    width: 300px;
+  }
+
+
+  @media (max-width: 786px) {
+
+    .custom-thank-you .lottie-main {
+      font-size: 16px;
+      line-height: 18px;
+    }
+
+    .custom-thank-you .lottie-subtext {
+      font-size: 12px;
+    }
+
+    .hide-tablet {
+      display: block;
+    }
+
+    .hide-desktop {
+      display: none;
+    }
+
+    .avmade-header img {
+      width: 200px;
+    }
+
+  }
+</style>
+
+<body>
+
+  <div class="avmade-header" onclick="location.href='https://avmade.com'">
+    <img src="./assets/images/Group 5.png" alt="Garcons" />
+  </div>
+  <div class="avmade-body custom-thank-you">
+    <div class="lottie hide-tablet">
+      <lottie-player src="https://assets4.lottiefiles.com/packages/lf20_uy5nb1oy.json" background="transparent"
+        speed="1" style="width: 200px; height: 200px; margin: auto" loop autoplay></lottie-player>
+    </div>
+    <div class="lottie hide-desktop">
+      <lottie-player src="https://assets4.lottiefiles.com/packages/lf20_uy5nb1oy.json" background="transparent"
+        speed="1" style="width: 300px; height: 300px; margin: auto" loop autoplay></lottie-player>
+    </div>
+    <div class="lottie-main">
+      Thanks for choosing <br />
+      Garçons.
+    </div>
+    <div class="lottie-subtext">
+      We'll get back to you shortly!
+      <!-- We can’t wait to see you. If this is urgent <br />
+        email us at mike@avendros.com or call <br />
+        us at 1 (510) 751-3039 -->
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+
+
+
+      let decodedText = decodeURIComponent(window.location.href)
+
+      let nameArr = decodedText.match("invitee_full_name=(.*)&invitee_email");
+      let name = nameArr ? nameArr[1] : 'Not found'
+      let emailArr = decodedText.match("invitee_email=(.*)&text_reminder_number");
+      let email = emailArr ? emailArr[1] : 'Not found'
+      let phoneArr = decodedText.match("text_reminder_number=(.*)&answer_1");
+      let phone = phoneArr ? phoneArr[1] : 'Not found'
+
+
+      axios({
+        method: 'post',
+        // url: 'http://localhost:5000/api/v1/products/addHubSpotCalendlyData',
+        url: 'https://backend.avmade.com/api/v1/products/addHubSpotCalendlyData',
+        data: {
+          email: email,
+          url: window.location.href,
+          name: name,
+          phone: phone
+        }
+      })
+        .then(function (response) {
+          // window.location.href = `https://app.avmade.com`;
+        });
+
+    });
+
+  </script>
+</body>
+
+</html>
