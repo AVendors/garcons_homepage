@@ -782,9 +782,10 @@ header .selected {
         margin-left: -15px;
     }
 
-    #about-us .pt-2-m{
+    #about-us .pt-2-m {
         padding-top: 0rem !important;
     }
+
     #about-us.pt-2-m {
         padding-top: 1rem !important;
     }
@@ -799,5 +800,16 @@ header .selected {
 
     #trusted-teams .pb-4-m {
         padding-bottom: 0 !important;
+    }
+
+    #faq.mt-5-m {
+        margin-top: 5rem !important;
+    }
+
+    .f-24-m {
+        font-size: 24px;
+    }
+    #accordion.pt-3-m{
+        padding-top: 1rem !important;
     }
 }
