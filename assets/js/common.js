@@ -14,6 +14,7 @@ backdrop.addEventListener("click", closeMobileNav);
 function closeMobileNav() {
   mobileNav.classList.remove("open");
   backdrop.classList.remove("open");
+  $("#collapseExample").removeClass("show");
 }
 
 //SUBMIT SUBSCRIBE BUTTON
@@ -90,8 +91,15 @@ async function changeheaderColor() {
   // if ($('#main-header').hasClass("service-open")) {
   //   $('#main-header').classList.remove("service-open");
   // } else {
-  $("#main-header").classList.add("service-open");
+  // $("#main-header").classList.add("service-open");
   // }
+
+  if ($("#collapseExample").hasClass("show")) {
+    backdrop.classList.remove("open");
+  } else {
+    backdrop.classList.add("open");
+    $("#menu").removeClass("open");
+  }
 }
 
 var currentVideo = 1;
@@ -101,7 +109,6 @@ var LastVideo = 10;
 
 async function moveRightImg() {
   $(".video-" + currentVideo).addClass("hide");
-  console.log(".video-" + currentVideo)
   if (currentVideo < LastVideo) {
     currentVideo += 1;
   } else {
@@ -131,8 +138,6 @@ async function moveLeftImg() {
   // }
 }
 
+setTimeout("moveRightImg(5)", 5 * 1000);
 
-setTimeout("moveRightImg(5)", ((5) * 1000));
-
-
-document.getElementsByClassName('video-autoplay').play();
+document.getElementsByClassName("video-autoplay").play();

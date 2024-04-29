@@ -83,11 +83,12 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 10px 30px;
+    z-index: 2;
 }
 
 header img {
-    width: 25%;
-    max-width: 350px;
+    width: 20%;
+    max-width: 215px;
 }
 
 header span {
@@ -98,7 +99,7 @@ header button {
     background: black;
     color: #fff;
     border: none;
-    padding: 12px 27px;
+    padding: 10px 20px;
     border-radius: 7px;
 }
 
@@ -249,6 +250,9 @@ header a,
 header.black-header {
     background: #000;
     color: #fff;
+}
+header.pt-4-5{
+    padding-top: 2rem;
 }
 
 .pt-6 {
@@ -474,7 +478,8 @@ header.open {
     max-width: 520px;
 }
 
-header .selected {
+header .selected,
+#menu .selected {
     text-decoration: underline;
     color: #635BFF;
 }
@@ -535,6 +540,11 @@ header .selected {
     to {
         border-right-color: transparent;
     }
+}
+
+#collapseExample .bm-2-m{
+    margin-bottom: 0rem !important;
+    max-width: 85%;
 }
 
 @media (min-width:1375px) {
@@ -642,7 +652,7 @@ header .selected {
     .service-cards .card-body {
         background: #F4F4F4;
         border-radius: 0;
-        padding: 2px 30px;
+        padding: 2px 15px;
         width: 100%;
         border: 0;
         max-width: 100%;
@@ -695,6 +705,10 @@ header .selected {
         font-size: 30px !important;
     }
 
+    .f-32-m {
+        font-size: 32px !important;
+    }
+
     #why-garcons .pt-0-m,
     #step-1 .pt-0-m,
     .pt-0-m {
@@ -704,6 +718,10 @@ header .selected {
     #collapseExample .pt-2-m,
     .pt-2-m {
         padding-top: 0.7rem !important;
+    }
+
+    #collapseExample .bm-2-m{
+        margin-bottom: 0.2rem !important;
     }
 
     .pt-4-m {

@@ -31,13 +31,13 @@
     <header class="pos-rel grey-body">
         <img src="./assets/images/Group 5.png" alt="Garcons" onclick="location.href='./index.html'">
         <div class="hide-mobile">
-            <span class="f-14"><a href="about-us.html">About us</a></span>
-            <span class="f-14"> <a data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false"
-                    aria-controls="collapseExample">
+            <span class="f-12"><a href="about-us.html">About us</a></span>
+            <span class="f-12" onclick="return changeheaderColor()"> <a data-toggle="collapse" href="#collapseExample"
+                    role="button" aria-expanded="false" aria-controls="collapseExample">
                     Services
                 </a>
             </span>
-            <span class="selected f-14">Pricing</span>
+            <span class="selected f-12">Pricing</span>
             <button onclick="location.href='./meeting.html'">Book a meeting</button>
         </div>
         <div class="hide-desktop">
@@ -45,11 +45,15 @@
         </div>
     </header>
 
-    <div class="collapse service-cards pb-5 pt-4" id="collapseExample" >
+    <div class="backdrop"></div>
+
+    <div class="collapse service-cards pb-5 pt-4" id="collapseExample">
         <div class="card card-body pt-3">
             <div class="service-card p-4" onclick="location.href='./pricing.html'">
                 <h5 class="f-16 archivo-700">Website & App Design</h5>
-                <p class="pt-3 f-15 text-justify pt-2-m">Creating visually appealing and functional responsive designs that perform seamlessly
+                <p class="pt-3 f-15 text-justify pt-2-m bm-2-m">Creating visually appealing and functional responsive
+                    designs
+                    that perform seamlessly
                     across all
                     devices.</p>
             </div>
@@ -57,57 +61,73 @@
         <div class="card card-body pt-3">
             <div class="service-card p-4 purple" onclick="location.href='./pricing.html'">
                 <h5 class="f-16 archivo-700">UX Design </h5>
-                <p class="pt-3 f-15 text-justify pt-2-m">Enhancing site navigability and user-friendliness to keep visitors engaged and convert
+                <p class="pt-3 f-15 text-justify pt-2-m bm-2-m">Enhancing site navigability and user-friendliness to
+                    keep
+                    visitors engaged and convert
                     them into customers.</p>
             </div>
         </div>
         <div class="card card-body pt-3">
             <div class="service-card p-4 green" onclick="location.href='./pricing.html'">
                 <h5 class="f-16 archivo-700">UI Design</h5>
-                <p class="pt-3 f-15 text-justify pt-2-m">Focusing on the aesthetic and functional aspects of the website’s interface to align
+                <p class="pt-3 f-15 text-justify pt-2-m bm-2-m">Focusing on the aesthetic and functional aspects of the
+                    website’s interface to align
                     with the brand’s identity.</p>
             </div>
         </div>
         <div class="card card-body pt-3">
             <div class="service-card p-4 brown" onclick="location.href='./pricing.html'">
                 <h5 class="f-16 archivo-700">Graphic Design </h5>
-                <p class="pt-3 f-15 text-justify pt-2-m">Developing custom graphics, icons, and images to boost the site's visual appeal and
+                <p class="pt-3 f-15 text-justify pt-2-m bm-2-m">Developing custom graphics, icons, and images to boost
+                    the
+                    site's visual appeal and
                     support brand messaging.</p>
             </div>
         </div>
         <div class="card card-body pt-3">
             <div class="service-card p-4 light-blue" onclick="location.href='./pricing.html'">
                 <h5 class="f-16 archivo-700">Maintenance & Updates</h5>
-                <p class="pt-3 f-15 text-justify pt-2-m">Regular updates, bug fixes, and tweaks to keep the website running smoothly.</p>
+                <p class="pt-3 f-15 text-justify pt-2-m bm-2-m">Regular updates, bug fixes, and tweaks to keep the
+                    website
+                    running smoothly.</p>
             </div>
         </div>
         <div class="card card-body pt-3">
             <div class="service-card p-4 salmon" onclick="location.href='./pricing.html'">
                 <h5 class="f-16 archivo-700">SEO</h5>
-                <p class="pt-3 f-15 text-justify pt-2-m">Employing SEO strategies to improve organic search rankings and increase traffic.</p>
+                <p class="pt-3 f-15 text-justify pt-2-m bm-2-m">Employing SEO strategies to improve organic search
+                    rankings and
+                    increase traffic.</p>
             </div>
         </div>
         <div class="card card-body pt-3">
             <div class="service-card p-4 bright-blue" onclick="location.href='./pricing.html'">
                 <h5 class="f-16 archivo-700">Web Hosting</h5>
-                <p class="pt-3 f-15 text-justify pt-2-m">Offering server space for website hosting, tailored to client needs.</p>
+                <p class="pt-3 f-15 text-justify pt-2-m bm-2-m">Offering server space for website hosting, tailored to
+                    client
+                    needs.</p>
             </div>
         </div>
         <div class="card card-body pt-3">
             <div class="service-card p-4 pink" onclick="location.href='./pricing.html'">
                 <h5 class="f-16 archivo-700">Analytics and Reporting</h5>
-                <p class="pt-3 f-15 text-justify pt-2-m">Using tools to track website performance and user engagement to inform improvements.</p>
+                <p class="pt-3 f-15 text-justify pt-2-m bm-2-m">Using tools to track website performance and user
+                    engagement to
+                    inform improvements.</p>
             </div>
         </div>
 
 
     </div>
 
-    <div class="backdrop"></div>
-
     <ul id="menu">
         <span><a href="about-us.html">About us</a></span>
-        <span>Pricing</span>
+        <span onclick="return changeheaderColor()"> <a data-toggle="collapse" href="#collapseExample" role="button"
+                aria-expanded="false" aria-controls="collapseExample">
+                Services
+            </a>
+        </span>
+        <span class="selected">Pricing</span>
         <button onclick="location.href='./meeting.html'">Book a meeting</button>
     </ul>
 
@@ -123,7 +143,8 @@
             <div class="empty-box">
                 <div class="start-up-info">
                     <h3 class="archivo-700">Startups</h3>
-                    <p class="mt-4 f-14-m">Tailored for emerging small businesses, this package is designed to accommodate those with limited pages and budgets</p>
+                    <p class="mt-4 f-14-m">Tailored for emerging small businesses, this package is designed to
+                        accommodate those with limited pages and budgets</p>
                 </div>
                 <button class="archivo-600 f-14-m mt-3-m">Contact us</button>
             </div>

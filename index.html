@@ -30,18 +30,18 @@
     <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 
 
-    <header id="main-header" class="pos-rel black-header pt-5">
+    <header id="main-header" class="pos-rel black-header pt-4-5">
         <img src="./assets/images/garcons-title.svg" alt="Garcons" onclick="location.href='./index.html'">
         <div class="hide-mobile">
-            <span class="f-14"><a href="about-us.html">About us</a></span>
-            <span class="f-14">
+            <span class="f-12"><a href="about-us.html">About us</a></span>
+            <span class="f-12" onclick="return changeheaderColor()">
                 <a data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false"
-                    aria-controls="collapseExample" onclick="return changeheaderColor()">
+                    aria-controls="collapseExample" >
                     Services
                 </a>
             </span>
-            <span class="f-14"><a href="pricing.html">Pricing</a></span>
-            <button class="archivo-700" onclick="location.href='./meeting.html'">Book a meeting</button>
+            <span class="f-12"><a href="pricing.html">Pricing</a></span>
+            <button class="archivo-500" onclick="location.href='./meeting.html'">Book a meeting</button>
 
         </div>
         <div class="hide-desktop">
@@ -50,11 +50,13 @@
             <img id="toggle-mobile-nav2" src="./assets/images/navbar-mobile-collapse.svg">
         </div>
     </header>
+    <div class="backdrop"></div>
     <div class="collapse service-cards pb-5 pt-4" id="collapseExample">
         <div class="card card-body pt-3">
             <div class="service-card p-4" onclick="location.href='./pricing.html'">
                 <h5 class="f-16 archivo-700">Website & App Design</h5>
-                <p class="pt-3 f-15 text-justify pt-2-m">Creating visually appealing and functional responsive designs
+                <p class="pt-3 f-15 text-justify pt-2-m bm-2-m">Creating visually appealing and functional responsive
+                    designs
                     that perform seamlessly
                     across all
                     devices.</p>
@@ -63,7 +65,8 @@
         <div class="card card-body pt-3">
             <div class="service-card p-4 purple" onclick="location.href='./pricing.html'">
                 <h5 class="f-16 archivo-700">UX Design </h5>
-                <p class="pt-3 f-15 text-justify pt-2-m">Enhancing site navigability and user-friendliness to keep
+                <p class="pt-3 f-15 text-justify pt-2-m bm-2-m">Enhancing site navigability and user-friendliness to
+                    keep
                     visitors engaged and convert
                     them into customers.</p>
             </div>
@@ -71,7 +74,7 @@
         <div class="card card-body pt-3">
             <div class="service-card p-4 green" onclick="location.href='./pricing.html'">
                 <h5 class="f-16 archivo-700">UI Design</h5>
-                <p class="pt-3 f-15 text-justify pt-2-m">Focusing on the aesthetic and functional aspects of the
+                <p class="pt-3 f-15 text-justify pt-2-m bm-2-m">Focusing on the aesthetic and functional aspects of the
                     website’s interface to align
                     with the brand’s identity.</p>
             </div>
@@ -79,7 +82,8 @@
         <div class="card card-body pt-3">
             <div class="service-card p-4 brown" onclick="location.href='./pricing.html'">
                 <h5 class="f-16 archivo-700">Graphic Design </h5>
-                <p class="pt-3 f-15 text-justify pt-2-m">Developing custom graphics, icons, and images to boost the
+                <p class="pt-3 f-15 text-justify pt-2-m bm-2-m">Developing custom graphics, icons, and images to boost
+                    the
                     site's visual appeal and
                     support brand messaging.</p>
             </div>
@@ -87,28 +91,32 @@
         <div class="card card-body pt-3">
             <div class="service-card p-4 light-blue" onclick="location.href='./pricing.html'">
                 <h5 class="f-16 archivo-700">Maintenance & Updates</h5>
-                <p class="pt-3 f-15 text-justify pt-2-m">Regular updates, bug fixes, and tweaks to keep the website
+                <p class="pt-3 f-15 text-justify pt-2-m bm-2-m">Regular updates, bug fixes, and tweaks to keep the
+                    website
                     running smoothly.</p>
             </div>
         </div>
         <div class="card card-body pt-3">
             <div class="service-card p-4 salmon" onclick="location.href='./pricing.html'">
                 <h5 class="f-16 archivo-700">SEO</h5>
-                <p class="pt-3 f-15 text-justify pt-2-m">Employing SEO strategies to improve organic search rankings and
+                <p class="pt-3 f-15 text-justify pt-2-m bm-2-m">Employing SEO strategies to improve organic search
+                    rankings and
                     increase traffic.</p>
             </div>
         </div>
         <div class="card card-body pt-3">
             <div class="service-card p-4 bright-blue" onclick="location.href='./pricing.html'">
                 <h5 class="f-16 archivo-700">Web Hosting</h5>
-                <p class="pt-3 f-15 text-justify pt-2-m">Offering server space for website hosting, tailored to client
+                <p class="pt-3 f-15 text-justify pt-2-m bm-2-m">Offering server space for website hosting, tailored to
+                    client
                     needs.</p>
             </div>
         </div>
         <div class="card card-body pt-3">
             <div class="service-card p-4 pink" onclick="location.href='./pricing.html'">
                 <h5 class="f-16 archivo-700">Analytics and Reporting</h5>
-                <p class="pt-3 f-15 text-justify pt-2-m">Using tools to track website performance and user engagement to
+                <p class="pt-3 f-15 text-justify pt-2-m bm-2-m">Using tools to track website performance and user
+                    engagement to
                     inform improvements.</p>
             </div>
         </div>
@@ -116,11 +124,11 @@
 
     </div>
 
-    <div class="backdrop"></div>
+
 
     <ul id="menu">
         <span><a href="about-us.html">About us</a></span>
-        <span> <a data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false"
+        <span onclick="return changeheaderColor()"> <a data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false"
                 aria-controls="collapseExample">
                 Services
             </a>
@@ -131,7 +139,7 @@
     </ul>
 
 
-    <section id="about-us" class="f-34 pt-5 archivo-400 about-us f-19-m black-bg padding-body pt-2-m">
+    <section id="about-us" class="f-28 pt-5 archivo-400 about-us f-19-m black-bg padding-body pt-2-m">
         <div class="pt-4 pt-2-m">
             <br />
             First impression matters. <br />
@@ -148,7 +156,7 @@
     </section>
 
     <section id="trusted-teams" class="trusted-teams mt-5 pb-5 pb-0-m mt-2-m">
-        <h1 class="text-center f-30 archivo-800 mb-4 pb-5 pt-5 f-18-m pb-4-m">Work & Collabs</h1>
+        <h1 class="text-center f-24 archivo-800 mb-4 pt-5 f-18-m pb-4-m">Work & Collabs</h1>
         <div class="carousel mt-4"
             data-flickity='{ "freeScroll": true, "contain": true, "prevNextButtons": false, "pageDots": false,"wrapAround": true,"autoPlay": 1500 }'>
             <img src="./assets/images/SVG/0d9aa9b05e89ce780ff78ee4a75fee2c96744292-90x22.svg" />
@@ -202,12 +210,15 @@
             <!-- <img src="./assets/images/figma2.png" alt="Garcons" /> -->
             <div class="step-1-info">
                 <video preload="auto" width="60%" height="auto" autoplay muted loop playsinline
-                    poster="./assets/images/figma2.png" class="mt-4-m video-autoplay">
+                    poster="./assets/images/figma2.png" class="mt-4-m video-autoplay hide-mobile">
                     <source src="https://avendors.s3.amazonaws.com/Static/garcons-step1.mp4" type="video/mp4">
                 </video>
+                <video preload="auto" width="60%" height="auto" autoplay muted loop playsinline
+                    poster="./assets/images/figma2.png" class="mt-4-m video-autoplay hide-desktop">
+                    <source src="https://avendors.s3.amazonaws.com/Static/garcons-step1_mobile.mp4" type="video/mp4">
+                </video>
                 <div class="step-1-info__details archivo-600 f-14-m">
-                    Work together with a professional designer to polish and elevate your store. You will be hands on
-                    and get visibility throughout the process.
+                    A designated design team member will collaborate closely with you to thoroughly understand your brand’s goals and expectations.
                     <button class="mt-4 hide-mobile" onclick="location.href='#step-2'">Next</button>
                 </div>
             </div>
@@ -222,17 +233,16 @@
             <h2 class="f-36 archivo-700 mt-3 mt-2-m">Co-design</h2>
             <div class="steps-flex mt-5 pt-3 mt-3-m">
                 <p class="archivo-600 f-14-m">
-                    Our engineering team is set to finalize the code and prepare for deployment. Once completed, we'll
-                    submit the final version for your approval then will push live. 
+                    Our design team will create something magnificent, involving you actively in the process. You’ll have continuous access and visibility, ensuring your feedback is incorporated throughout.
                     <button class="mt-3 hide-mobile" onclick="location.href='#step-3'">Next</button>
                 </p>
                 <!-- <img class="pt-3-m" src="./assets/images/step-2.png" /> -->
-                <video class="pt-3-m hide-mobile video-autoplay" preload="auto" width="60%" height="auto" autoplay muted loop
-                    playsinline poster="./assets/images/step-2.png">
+                <video class="pt-3-m hide-mobile video-autoplay" preload="auto" width="60%" height="auto" autoplay muted
+                    loop playsinline poster="./assets/images/step-2.png">
                     <source src="https://avendors.s3.amazonaws.com/Static/Co-design+(desktop).mp4" type="video/mp4">
                 </video>
-                <video class="pt-3-m hide-desktop video-autoplay" preload="auto" width="104%" height="auto" autoplay muted loop
-                    playsinline poster="./assets/images/step-2.png">
+                <video class="pt-3-m hide-desktop video-autoplay" preload="auto" width="104%" height="auto" autoplay
+                    muted loop playsinline poster="./assets/images/step-2.png">
                     <source src="https://avendors.s3.amazonaws.com/Static/Co-design+(mobile).mp4" type="video/mp4">
                 </video>
             </div>
@@ -247,18 +257,16 @@
             <h2 class="f-36 archivo-700 mt-3 mt-2-m">Prototype</h2>
             <div class="steps-flex mt-5 pt-3 mt-3-m">
                 <!-- <img class="hide-mobile" src="./assets/images/step-3.png" /> -->
-                <video class="hide-mobile video-autoplay" preload="auto" width="60%" height="auto" autoplay muted loop playsinline
-                    poster="./assets/images/step-3.png">
+                <video class="hide-mobile video-autoplay" preload="auto" width="60%" height="auto" autoplay muted loop
+                    playsinline poster="./assets/images/step-3.png">
                     <source src="https://avendors.s3.amazonaws.com/Static/Prototype+(desktop).mp4" type="video/mp4">
                 </video>
-                <p class="archivo-600 f-14-m">Before we hard code it, we will create a realistic prototype that will
-                    allow you
-                    to review and give us feedback on iteration you like.
+                <p class="archivo-600 f-14-m">We will develop a realistic prototype for you to review and provide feedback on before finalizing the design.
                     <button class="mt-3 hide-mobile" onclick="location.href='#step-4'">Next</button>
                 </p>
                 <!-- <img class="pt-3-m hide-desktop" src="./assets/images/step-3.png" /> -->
-                <video class="pt-3-m hide-desktop video-autoplay" preload="auto" width="104%" height="auto" autoplay muted loop
-                    playsinline poster="./assets/images/step-3.png">
+                <video class="pt-3-m hide-desktop video-autoplay" preload="auto" width="104%" height="auto" autoplay
+                    muted loop playsinline poster="./assets/images/step-3.png">
                     <source src="https://avendors.s3.amazonaws.com/Static/Prototype+(mobile).mp4" type="video/mp4">
                 </video>
             </div>
@@ -272,18 +280,16 @@
             <p class="archivo-700 f-12 f-12-m mt-5">STEP 4 : Code</p>
             <h2 class="f-36 archivo-700 mt-3 mt-2-m">&lt;Code&gt;</h2>
             <div class="steps-flex mt-5 pt-3 mt-3-m">
-                <p class="archivo-600 f-14-m">Now our programmers get going with codes so you can launch and show off
-                    your
-                    store that is on part with upscale brands.
+                <p class="archivo-600 f-14-m">We will begin coding for deployment. Upon completion, we'll submit the final product for your approval and conduct rigorous testing to ensure it is bug-free before going live.
                     <button class="mt-3 hide-mobile" onclick="location.href='#work-examples'">Next</button>
                 </p>
                 <!-- <img class="pt-3-m" src="./assets/images/step-4.png" /> -->
-                <video class="pt-3-m hide-mobile video-autoplay" preload="auto" width="60%" height="auto" autoplay muted loop
-                    playsinline poster="./assets/images/step-4.png">
+                <video class="pt-3-m hide-mobile video-autoplay" preload="auto" width="60%" height="auto" autoplay muted
+                    loop playsinline poster="./assets/images/step-4.png">
                     <source src="https://avendors.s3.amazonaws.com/Static/_Code+(desktop).mp4" type="video/mp4">
                 </video>
-                <video class="pt-3-m hide-desktop video-autoplay" preload="auto" width="104%" height="auto" autoplay muted loop
-                    playsinline poster="./assets/images/step-4.png">
+                <video class="pt-5-m hide-desktop video-autoplay" preload="auto" width="104%" height="auto" autoplay
+                    muted loop playsinline poster="./assets/images/step-4.png">
                     <source src="https://avendors.s3.amazonaws.com/Static/Code++(mobile).mp4" type="video/mp4">
                 </video>
             </div>
@@ -300,53 +306,43 @@
             the future. Below, you can find some examples of our past work.</p>
         <!-- <img src="./assets/images/work-examples.png" /> -->
         <video class="video-1 video-autoplay" preload="auto" width="100%" height="auto" autoplay muted loop playsinline
-            poster=""
-            >
+            poster="">
             <source src="https://avendors.s3.amazonaws.com/Static/Work+Example+(animation).mp4" type="video/mp4">
         </video>
-        <video class="video-2 hide video-autoplay" preload="auto" width="100%" height="auto" autoplay muted loop playsinline
-            poster=""
-            >
+        <video class="video-2 hide video-autoplay" preload="auto" width="100%" height="auto" autoplay muted loop
+            playsinline poster="">
             <source src="https://avendors.s3.amazonaws.com/Static/Work+example+(Ecom+2).mp4" type="video/mp4">
         </video>
-        <video class="video-3 hide video-autoplay" preload="auto" width="100%" height="auto" autoplay muted loop playsinline
-            poster=""
-            >
+        <video class="video-3 hide video-autoplay" preload="auto" width="100%" height="auto" autoplay muted loop
+            playsinline poster="">
             <source src="https://avendors.s3.amazonaws.com/Static/Work+example+(Ecom).mp4" type="video/mp4">
         </video>
-        <video class="video-4 hide video-autoplay" preload="auto" width="100%" height="auto" autoplay muted loop playsinline
-            poster=""
-            >
+        <video class="video-4 hide video-autoplay" preload="auto" width="100%" height="auto" autoplay muted loop
+            playsinline poster="">
             <source src="https://avendors.s3.amazonaws.com/Static/Work+Example+(fintech).mp4" type="video/mp4">
         </video>
-        <video class="video-5 hide video-autoplay" preload="auto" width="100%" height="auto" autoplay muted loop playsinline
-            poster=""
-            >
+        <video class="video-5 hide video-autoplay" preload="auto" width="100%" height="auto" autoplay muted loop
+            playsinline poster="">
             <source src="https://avendors.s3.amazonaws.com/Static/Work+example+(HealthTech).mp4" type="video/mp4">
         </video>
-        <video class="video-6 hide video-autoplay" preload="auto" width="100%" height="auto" autoplay muted loop playsinline
-            poster=""
-            >
+        <video class="video-6 hide video-autoplay" preload="auto" width="100%" height="auto" autoplay muted loop
+            playsinline poster="">
             <source src="https://avendors.s3.amazonaws.com/Static/Work+example+(Marketplace).mp4" type="video/mp4">
         </video>
-        <video class="video-7 hide video-autoplay" preload="auto" width="100%" height="auto" autoplay muted loop playsinline
-            poster=""
-            >
+        <video class="video-7 hide video-autoplay" preload="auto" width="100%" height="auto" autoplay muted loop
+            playsinline poster="">
             <source src="https://avendors.s3.amazonaws.com/Static/Work+Example+(SaaS).mp4" type="video/mp4">
         </video>
-        <video class="video-8 hide video-autoplay" preload="auto" width="100%" height="auto" autoplay muted loop playsinline
-            poster=""
-            >
+        <video class="video-8 hide video-autoplay" preload="auto" width="100%" height="auto" autoplay muted loop
+            playsinline poster="">
             <source src="https://avendors.s3.amazonaws.com/Static/work+example+(Service)+(1).mp4" type="video/mp4">
         </video>
-        <video class="video-9 hide video-autoplay" preload="auto" width="100%" height="auto" autoplay muted loop playsinline
-            poster=""
-            >
+        <video class="video-9 hide video-autoplay" preload="auto" width="100%" height="auto" autoplay muted loop
+            playsinline poster="">
             <source src="https://avendors.s3.amazonaws.com/Static/Work+Example+(service)+(2).mp4" type="video/mp4">
         </video>
-        <video class="video-10 hide video-autoplay" preload="auto" width="100%" height="auto" autoplay muted loop playsinline
-            poster=""
-            >
+        <video class="video-10 hide video-autoplay" preload="auto" width="100%" height="auto" autoplay muted loop
+            playsinline poster="">
             <source src="https://avendors.s3.amazonaws.com/Static/Work+example+(Service).mp4" type="video/mp4">
         </video>
 
@@ -356,17 +352,16 @@
 
         </div>
         <div class="icons mt-3">
-            <img class="move-left icon" src="./assets/images/left-2-svgrepo-com.svg" onclick="return moveLeftImg()"/>
-            <img class="move-right icon icon-right" src="./assets/images/left-2-svgrepo-com.svg" onclick="return moveRightImg()" />
+            <img class="move-left icon" src="./assets/images/left-2-svgrepo-com.svg" onclick="return moveLeftImg()" />
+            <img class="move-right icon icon-right" src="./assets/images/left-2-svgrepo-com.svg"
+                onclick="return moveRightImg()" />
         </div>
 
     </section>
     <section id="why-garcons" class="padding-body mt-5">
-        <h2 class="archivo-900 mt-5 f-36 pt-5 pt-3-m">Why Garçons?</h2>
+        <h2 class="archivo-900 mt-5 f-36 pt-5 pt-3-m f-32-m">Why Garçons?</h2>
         <p class="archivo-500 mt-4 text-justify max-85-width max-desktop-width f-18 f-16-m">
-            We help emerging brands thrive online. Today, a standout online store is crucial for customer conversion.
-            Our team of expert designers and programmers from top tech companies will elevate your brand's online
-            presence.
+            We help emerging brands thrive online. In today's world, a standout online presence is essential for converting visitors into customers. Our elite design and engineering team will elevate your brand, ensuring it not only attracts but also retains customers. We know what it takes to win
         </p>
         <!-- <button class="mt-3 hide-mobile">Book a meeting</button> -->
         <div class="flex-items mt-5 pb-5 mb-4">
@@ -384,8 +379,8 @@
             </div>
             <div>
                 <!-- <img class="pt-4-m" src="./assets/images/why-garcons-2.png" /> -->
-                <video class="pt-4-m video-autoplay" preload="auto" width="100%" height="auto" autoplay muted loop playsinline
-                    poster="./assets/images/why-garcons-2.png">
+                <video class="pt-4-m video-autoplay" preload="auto" width="100%" height="auto" autoplay muted loop
+                    playsinline poster="./assets/images/why-garcons-2.png">
                     <source src="https://avendors.s3.amazonaws.com/Static/Scalable+solution.mp4" type="video/mp4">
                 </video>
                 <h4 class="mt-4  archivo-800 f-18-m f-20">Scalable solution</h4>
@@ -396,8 +391,8 @@
             </div>
             <div>
                 <!-- <img class="pt-4-m" src="./assets/images/why-garcons-3.png" /> -->
-                <video class="pt-4-m video-autoplay" preload="auto" width="100%" height="auto" autoplay muted loop playsinline
-                    poster="./assets/images/why-garcons-3.png">
+                <video class="pt-4-m video-autoplay" preload="auto" width="100%" height="auto" autoplay muted loop
+                    playsinline poster="./assets/images/why-garcons-3.png">
                     <source src="https://avendors.s3.amazonaws.com/Static/No+detail+too+small+(desktop).mp4"
                         type="video/mp4">
                 </video>
@@ -417,8 +412,8 @@
                 world’s best websites together. From wireframe to design to prototype to code—we got you!</p>
             <button class="mt-2 hide-mobile" onclick="location.href='./pricing.html'">Book a meeting</button>
         </div>
-        <video class="pb-5 pt-3-m video-autoplay" preload="auto" width="60%" height="auto" autoplay muted loop playsinline
-            poster="./assets/images/create-beautiful.png">
+        <video class="pb-5 pt-3-m video-autoplay" preload="auto" width="60%" height="auto" autoplay muted loop
+            playsinline poster="./assets/images/create-beautiful.png">
             <source src="https://avendors.s3.amazonaws.com/Static/Create+beautiful...+(desktop).mp4" type="video/mp4">
         </video>
 
