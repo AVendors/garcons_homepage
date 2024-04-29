@@ -518,7 +518,7 @@ header .selected,
     }
 
     to {
-        width: 185px;
+        width: 166px;
     }
 }
 
@@ -646,7 +646,7 @@ header .selected,
     }
 
     .f-18-m {
-        font-size: 18px;
+        font-size: 18px !important;
     }
 
     .service-cards .card-body {
