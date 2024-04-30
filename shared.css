@@ -569,6 +569,10 @@ header .selected,
     header {
         margin-top: 20px;
         padding: 10px 15px;
+        z-index: 1;
+        /* z-index: 2; */
+        margin-top: -20px;
+        padding-top: 20px;
     }
 
     #toggle-mobile-nav2 {
@@ -722,6 +726,7 @@ header .selected,
 
     #collapseExample .bm-2-m{
         margin-bottom: 0.2rem !important;
+        max-width: 100%;
     }
 
     .pt-4-m {
@@ -829,5 +834,8 @@ header .selected,
     }
     #accordion.pt-3-m{
         padding-top: 1rem !important;
+    }
+    header.open {
+        z-index: 2;
     }
 }

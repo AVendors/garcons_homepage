@@ -32,6 +32,14 @@
     justify-content: space-between;
 }
 
+#step-3 .steps-flex {
+    justify-content: flex-start;
+}
+
+#step-3 .pl-step-3{
+    margin-left: 5%;
+}
+
 .steps-flex img {
     width: 60%;
 }
@@ -361,7 +369,8 @@ header.grey-body {
 }
 
 #work-examples p {
-    max-width: 450px;
+    max-width: 525px;
+    margin: auto;
 }
 
 #faq {
@@ -395,15 +404,16 @@ header.grey-body {
     border-radius: 10px;
 }
 
-#collapseExample{
+#collapseExample {
     z-index: 1;
-    position: absolute;
+    position: fixed;
 }
 
-#collapseExample.pb-5{
+#collapseExample.pb-5 {
     padding-bottom: 10rem !important;
 }
-.trusted-teams h1{
+
+.trusted-teams h1 {
     padding-top: 4.6rem !important;
     padding-bottom: 2rem !important;
 }
@@ -612,13 +622,19 @@ header.grey-body {
     .do-it-right {
         line-height: 30px;
     }
-    #step-4 .pt-5-m{
+
+    #step-4 .pt-5-m {
         padding-top: 5rem !important;
     }
+
     #work-examples .icon {
         height: 27px;
     }
-    #collapseExample.pb-5{
+
+    #collapseExample.pb-5 {
         padding-bottom: 4rem !important;
+    }
+    #step-3 .pl-step-3{
+        margin-left: 0;
     }
 }

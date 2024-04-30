@@ -5,6 +5,13 @@ var mobileNav = document.querySelector("#menu");
 toggleButton2 ? toggleButton2.addEventListener("click", openMobileNev) : "";
 
 function openMobileNev() {
+  if ($("#collapseExample").hasClass("show")) {
+    backdrop.classList.remove("open");
+    $("#collapseExample").removeClass("show");
+    console.log("Here");
+    return;
+  }
+
   mobileNav.classList.add("open");
   backdrop.classList.add("open");
 }
@@ -96,7 +103,9 @@ async function changeheaderColor() {
 
   if ($("#collapseExample").hasClass("show")) {
     backdrop.classList.remove("open");
+    header.classList.remove("open");
   } else {
+    header.classList.add("open");
     backdrop.classList.add("open");
     $("#menu").removeClass("open");
   }
