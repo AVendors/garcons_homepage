@@ -390,7 +390,7 @@ header.grey-body {
 
 #work-examples .icons {
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
 }
 
 .hide {
