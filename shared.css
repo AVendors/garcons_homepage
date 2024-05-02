@@ -251,7 +251,8 @@ header.black-header {
     background: #000;
     color: #fff;
 }
-header.pt-4-5{
+
+header.pt-4-5 {
     padding-top: 2rem;
 }
 
@@ -508,7 +509,22 @@ header .selected,
 }
 
 .anim-typewriter.line-2 {
-    animation: typewriter2 4s steps(44) 5s 1 normal both,
+    animation: typewriter2 4s steps(44) 8s 1 normal both,
+        blinkTextCursor 500ms steps(44) infinite normal;
+}
+
+.anim-typewriter.first-impr {
+    animation: typewriter3 4s steps(44) 1s 1 normal both,
+        blinkTextCursor 500ms steps(44) infinite normal;
+}
+
+.anim-typewriter.design-matter {
+    animation: typewriter4 4s steps(44) 5s 1 normal both,
+        blinkTextCursor 500ms steps(44) infinite normal;
+}
+
+.anim-typewriter.customer-matter {
+    animation: typewriter5 4s steps(44) 10s 1 normal both,
         blinkTextCursor 500ms steps(44) infinite normal;
 }
 
@@ -532,6 +548,36 @@ header .selected,
     }
 }
 
+@keyframes typewriter3 {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 309px;
+    }
+}
+
+@keyframes typewriter4 {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 385px;
+    }
+}
+
+@keyframes typewriter5 {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 401px;
+    }
+}
+
 @keyframes blinkTextCursor {
     from {
         border-right-color: rgba(255, 255, 255, .75);
@@ -542,7 +588,7 @@ header .selected,
     }
 }
 
-#collapseExample .bm-2-m{
+#collapseExample .bm-2-m {
     margin-bottom: 0rem !important;
     max-width: 85%;
 }
@@ -724,7 +770,7 @@ header .selected,
         padding-top: 0.7rem !important;
     }
 
-    #collapseExample .bm-2-m{
+    #collapseExample .bm-2-m {
         margin-bottom: 0.2rem !important;
         max-width: 100%;
     }
@@ -832,10 +878,19 @@ header .selected,
     .f-24-m {
         font-size: 24px;
     }
-    #accordion.pt-3-m{
+
+    #accordion.pt-3-m {
         padding-top: 1rem !important;
     }
+
     header.open {
         z-index: 2;
     }
+
+    #work-examples .text-left-mobile,
+    .text-left-mobile {
+        text-align: left !important;
+    }
+
+
 }

@@ -406,7 +406,7 @@ header.grey-body {
 
 #collapseExample {
     z-index: 1;
-    position: fixed;
+    position: sticky;
 }
 
 #collapseExample.pb-5 {
@@ -475,6 +475,7 @@ header.grey-body {
     #why-garcons .max-85-width,
     #create-web-designs .max-85-width {
         max-width: 85%;
+        margin: 0;
     }
 
     .sc-left .steps-flex img {
@@ -636,5 +637,8 @@ header.grey-body {
     }
     #step-3 .pl-step-3{
         margin-left: 0;
+    }
+    #work-examples .icons {
+        justify-content: flex-end;
     }
 }
