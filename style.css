@@ -472,9 +472,12 @@ header.grey-body {
     }
 
     #work-examples p,
-    #why-garcons .max-85-width,
     #create-web-designs .max-85-width {
         max-width: 85%;
+        margin: 0;
+    }
+    #why-garcons .max-85-width{
+        max-width: 75%;
         margin: 0;
     }
 
@@ -607,7 +610,7 @@ header.grey-body {
     }
 
     #step-4 {
-        background: #1bb14d;
+        background: #10A955;
     }
 
     #work-examples video {
@@ -639,6 +642,9 @@ header.grey-body {
         margin-left: 0;
     }
     #work-examples .icons {
-        justify-content: flex-end;
+        /* justify-content: flex-end; */
+    }
+    #step-2 {
+        margin-top: -25px;
     }
 }
