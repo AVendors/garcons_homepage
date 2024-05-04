@@ -100,7 +100,7 @@ async function changeheaderColor() {
   // } else {
   // $("#main-header").classList.add("service-open");
   // }
-
+  window.scrollTo({ top: 0, behavior: 'smooth' });
   if ($("#collapseExample").hasClass("show")) {
     backdrop.classList.remove("open");
     header.classList.remove("open");
