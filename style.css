@@ -610,7 +610,7 @@ header.grey-body {
     }
 
     #step-4 {
-        background: #10A955;
+        background: #10A958;
     }
 
     #work-examples video {
@@ -646,5 +646,8 @@ header.grey-body {
     }
     #step-2 {
         margin-top: -25px;
+    }
+    #create-web-designs p{
+        padding-bottom: 2rem ;
     }
 }
