@@ -610,7 +610,8 @@ header.grey-body {
     }
 
     #step-4 {
-        background: #10A958;
+        /* background: #10A958; */
+        background: #15A958;
     }
 
     #work-examples video {
