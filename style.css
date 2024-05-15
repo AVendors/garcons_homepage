@@ -651,4 +651,9 @@ header.grey-body {
     #create-web-designs p{
         padding-bottom: 3rem ;
     }
+    #step-4 video{
+        left: -20px;
+    position: relative;
+    width: 110%;
+    }
 }
