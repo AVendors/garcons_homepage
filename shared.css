@@ -501,6 +501,9 @@ header .selected,
     overflow: hidden;
     /* transform: translateY(-50%);     */
 }
+.line-1.hide-dc{
+    border: none;
+}
 
 /* Animation */
 .anim-typewriter {
@@ -519,12 +522,12 @@ header .selected,
 }
 
 .anim-typewriter.design-matter {
-    animation: typewriter4 4s steps(44) 5s 1 normal both,
+    animation: typewriter4 4s steps(44) 0s 1 normal both,
         blinkTextCursor 500ms steps(44) infinite normal;
 }
 
 .anim-typewriter.customer-matter {
-    animation: typewriter5 4s steps(44) 10s 1 normal both,
+    animation: typewriter5 4s steps(44) 0s 1 normal both,
         blinkTextCursor 500ms steps(44) infinite normal;
 }
 
@@ -890,6 +893,36 @@ header .selected,
     #work-examples .text-left-mobile,
     .text-left-mobile {
         text-align: left !important;
+    }
+
+    @keyframes typewriter3 {
+        from {
+            width: 0;
+        }
+
+        to {
+            width: 212px;
+        }
+    }
+
+    @keyframes typewriter4 {
+        from {
+            width: 0;
+        }
+
+        to {
+            width: 265px;
+        }
+    }
+
+    @keyframes typewriter5 {
+        from {
+            width: 0;
+        }
+
+        to {
+            width: 275px;
+        }
     }
 
 

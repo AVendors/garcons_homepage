@@ -418,6 +418,10 @@ header.grey-body {
     padding-bottom: 2rem !important;
 }
 
+.hide-dc{
+    color: transparent;
+}
+
 @media (max-width:1100px) {
     #pricing-boxes .main-box {
         height: 80%;

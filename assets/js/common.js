@@ -100,7 +100,7 @@ async function changeheaderColor() {
   // } else {
   // $("#main-header").classList.add("service-open");
   // }
-  window.scrollTo({ top: 0, behavior: 'smooth' });
+  window.scrollTo({ top: 0, behavior: "smooth" });
   if ($("#collapseExample").hasClass("show")) {
     backdrop.classList.remove("open");
     header.classList.remove("open");
@@ -149,4 +149,40 @@ async function moveLeftImg() {
 
 setTimeout("moveRightImg(5)", 5 * 1000);
 
-document.getElementsByClassName("video-autoplay").play();
+// document.getElementsByClassName("video-autoplay").play();
+
+// $(window).on("load", loadAfter5sec);
+window.onload = typeWriter;
+
+function typeWriter() {
+  loadAfter5sec();
+  loadAfter10sec();
+  loadAfter15sec();
+}
+
+function loadAfter5sec() {
+  setTimeout(() => {
+    $("#first-impr").removeClass("line-1");
+    $("#design-matter").removeClass("hide-dc");
+    $("#design-matter").addClass("anim-typewriter");
+    $("#design-matter").addClass("design-matter");
+  }, 5 * 1000);
+}
+
+function loadAfter10sec() {
+  setTimeout(() => {
+    $("#design-matter").removeClass("line-1");
+    $("#customer-matter").removeClass("hide-dc");
+    $("#customer-matter").addClass("anim-typewriter");
+    $("#customer-matter").addClass("customer-matter");
+  }, 10 * 1000);
+}
+
+function loadAfter15sec() {
+  setTimeout(() => {
+    $("#customer-matter").removeClass("line-1");
+    $("#do-it-right").removeClass("hide-dc");
+    $("#do-it-right").addClass("anim-typewriter");
+    $("#do-it-right").addClass("line-1");
+  }, 15 * 1000);
+}
