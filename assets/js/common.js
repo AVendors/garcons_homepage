@@ -166,7 +166,7 @@ function loadAfter5sec() {
     $("#design-matter").removeClass("hide-dc");
     $("#design-matter").addClass("anim-typewriter");
     $("#design-matter").addClass("design-matter");
-  }, 5 * 1000);
+  }, 2.9 * 1000);
 }
 
 function loadAfter10sec() {
@@ -175,7 +175,7 @@ function loadAfter10sec() {
     $("#customer-matter").removeClass("hide-dc");
     $("#customer-matter").addClass("anim-typewriter");
     $("#customer-matter").addClass("customer-matter");
-  }, 10 * 1000);
+  }, 7.1 * 1000);
 }
 
 function loadAfter15sec() {
@@ -184,5 +184,5 @@ function loadAfter15sec() {
     $("#do-it-right").removeClass("hide-dc");
     $("#do-it-right").addClass("anim-typewriter");
     $("#do-it-right").addClass("line-1");
-  }, 15 * 1000);
+  }, 11.5 * 1000);
 }
