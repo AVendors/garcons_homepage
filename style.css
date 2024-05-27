@@ -433,6 +433,7 @@ header.grey-body {
 @media (max-width:786px) {
     #why-garcons .flex-items p {
         min-width: auto;
+        max-width: 88%;
     }
 
     .about-us {
@@ -477,7 +478,7 @@ header.grey-body {
 
     #work-examples p,
     #create-web-designs .max-85-width {
-        max-width: 85%;
+        max-width: 88%;
         margin: 0;
     }
 
@@ -579,6 +580,7 @@ header.grey-body {
     .step-1-info__details {
         width: 100%;
         margin-left: 0;
+        max-width: 320px;
     }
 
     #pricing-boxes .empty-box {
@@ -665,5 +667,14 @@ header.grey-body {
         left: -20px;
         position: relative;
         width: 108.5%;
+    }
+    #why-garcons .max-85-width {
+        max-width: 88%;
+    }
+    .steps-flex p {
+        max-width: 320px;
+    }
+    .sc-left .steps-flex p {
+        max-width: 320px;
     }
 }
