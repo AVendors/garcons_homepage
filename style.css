@@ -678,3 +678,9 @@ header.grey-body {
         max-width: 320px;
     }
 }
+
+@media (max-width:475px) {
+    .sc-left .steps-flex p {
+        max-width: 280px;
+    }
+}
