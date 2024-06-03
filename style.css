@@ -679,8 +679,9 @@ header.grey-body {
     }
 }
 
-@media (max-width:475px) {
-    .sc-left .steps-flex p {
+@media (max-width:500px) {
+    .steps-flex p,
+    .step-1-info__details {
         max-width: 280px;
     }
 }
